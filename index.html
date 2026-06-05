@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Presentación interactiva de tesis sobre la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 para la continuidad operativa.">
+    <title>Presentación de Tesis - Gestión de Riesgos ISO 27005</title>
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/simple.min.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Floating Background Glows for Aesthetic Richness -->
+    <div class="glow-bg-circle circle-1"></div>
+    <div class="glow-bg-circle circle-2"></div>
+
+    <!-- Header Overlay (visible on all slides except title) -->
+    <div class="presentation-header">
+        <div class="header-logos-container">
+            <img src="ucv.logo-Photoroom.png" alt="Escudo UCV" class="header-logo-shield">
+            <span class="header-logo-text-string">UNIVERSIDAD CÉSAR VALLEJO</span>
+        </div>
+        <div class="header-meta">
+            <span>INGENIERÍA DE SISTEMAS</span><br>
+            <span style="font-size:0.65rem; font-weight:500; opacity:0.8;">PROYECTO DE INVESTIGACIÓN</span>
+        </div>
+    </div>
+
+    <!-- Footer Overlay -->
+    <div class="presentation-footer">
+        <div class="footer-nav">Diapositiva 1 de 13</div>
+        <div style="font-size: 0.62rem; color: #FFFFFF; opacity: 0.8; font-weight: 600;">Tarapoto, 2026</div>
+    </div>
+
+    <!-- Reveal.js Main Container -->
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: PORTADA -->
+            <section class="slide-scroll">
+                <div class="title-slide-layout">
+                    <div class="title-main">
+                        <div class="title-logo-container" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+                            <img src="ucv.logo-Photoroom.png" alt="Escudo UCV" style="height: 80px; object-fit: contain;">
+                            <div style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; font-weight: 800; color: #FFFFFF; letter-spacing: 1.5px; text-transform: uppercase;">
+                                UNIVERSIDAD CÉSAR VALLEJO
+                            </div>
+                        </div>
+                        <div class="title-subtitle">PROYECTO DE INVESTIGACIÓN</div>
+                        <h1>Gestión automatizada de riesgos de seguridad de información basada en ISO/IEC 27005 para continuidad operativa en instituto de Tarapoto, 2026</h1>
+                    </div>
+                    <div class="title-meta-card">
+                        <div class="meta-item">
+                            <div class="meta-label">Autores</div>
+                            <div class="meta-value">Bustamante Barturen, José Jhonatan</div>
+                            <div class="meta-value" style="font-size:0.75rem !important; opacity:0.8;">(ORCID: 0000-0003-4134-8698)</div>
+                            <div class="meta-value" style="margin-top:4px;">Ruiz Tangoa, Ray Nixon</div>
+                            <div class="meta-value" style="font-size:0.75rem !important; opacity:0.8;">(ORCID: 0000-0001-6863-194X)</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-label">Asesor</div>
+                            <div class="meta-value">Mg. Callacná Ponce, Luis Gibson</div>
+                        </div>
+                        <div class="meta-item" style="margin-bottom:0;">
+                            <div class="meta-label">Campus & Escuela</div>
+                            <div class="meta-value">Tarapoto | Escuela de Ingeniería de Sistemas</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: EL PROBLEMA -->
+            <section class="slide-scroll" data-background-image="FONDO.png" data-state="problema-bg">
+                <div class="glass-container">
+                    <h2><i class="fa-solid fa-circle-exclamation text-accent" style="color:var(--accent-color);"></i> Realidad Problemática</h2>
+                    <p style="margin-top: 25px;">
+                        La digitalización educativa en Tarapoto avanza sin gestión formal de riesgos. Esta carencia vulnera drásticamente la seguridad de la información, exponiendo a la institución a incidentes cibernéticos y fallas sistémicas que paralizan los procesos y quiebran la continuidad operativa.
+                    </p>
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 40px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 20px;">
+                        <div class="word-count-badge">
+                            <i class="fa-solid fa-calculator"></i> Extensión del planteamiento: 39 palabras
+                        </div>
+                        <img src="assets/image5.png" alt="Logo UCV" style="height: 35px; opacity: 0.9;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: PROBLEMAS, OBJETIVOS E HIPÓTESIS -->
+            <section data-background-image="assets/image3.png" class="slide-scroll">
+                <div class="glass-container" style="max-width: 95%;">
+                    <h2>Problemas, Objetivos e Hipótesis</h2>
+                    
+                    <div class="grid-slide-layout">
+                        <!-- Left Column: Generals -->
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="card-general">
+                                <h3><i class="fa-solid fa-circle-question" style="color: var(--accent-color);"></i> Problema General</h3>
+                                <p>¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la continuidad operativa en un instituto de Tarapoto, 2026?</p>
+                            </div>
+                            <div class="card-general" style="border-top-color: var(--secondary-color);">
+                                <h3><i class="fa-solid fa-bullseye" style="color: var(--secondary-color);"></i> Objetivo General</h3>
+                                <p>Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la continuidad operativa de un instituto en la ciudad de Tarapoto durante el año 2026.</p>
+                            </div>
+                            <div class="card-general" style="border-top-color: var(--accent-yellow);">
+                                <h3><i class="fa-solid fa-lightbulb" style="color: var(--accent-yellow);"></i> Hipótesis General</h3>
+                                <p>La gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide de manera positiva en la continuidad operativa de un instituto de Tarapoto durante el año 2026.</p>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Specifics Accordion -->
+                        <div>
+                            <div style="font-weight: 700; font-size: 0.85rem; color: var(--primary-color); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;">
+                                <i class="fa-solid fa-network-wired"></i> Relación Específica por Dimensiones (Clic para ver)
+                            </div>
+                            <div class="specifics-accordion">
+                                
+                                <!-- Item 1 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span>D1: Disponibilidad de Servicios Críticos</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div style="margin-bottom: 8px;"><strong>P. Específico 1:</strong> ¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la disponibilidad de los servicios críticos de un instituto de Tarapoto, 2026?</div>
+                                        <div><strong>Obj. Específico 1:</strong> Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la disponibilidad de los servicios críticos de un instituto en la ciudad de Tarapoto durante el año 2026.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span>D2: Tiempo de Respuesta ante Incidentes</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div style="margin-bottom: 8px;"><strong>P. Específico 2:</strong> ¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en el tiempo de respuesta ante incidentes de un instituto de Tarapoto, 2026?</div>
+                                        <div><strong>Obj. Específico 2:</strong> Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la capacidad de respuesta de incidentes de un instituto en la ciudad de Tarapoto durante el año 2026.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span>D3: Capacidad de Recuperación de Procesos</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div style="margin-bottom: 8px;"><strong>P. Específico 3:</strong> ¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la capacidad de recuperación de procesos de un instituto de Tarapoto, 2026?</div>
+                                        <div><strong>Obj. Específico 3:</strong> Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la capacidad de recuperación de procesos de un instituto en la ciudad de Tarapoto durante el año 2026.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 4 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span>D4: Resiliencia Tecnológica</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div style="margin-bottom: 8px;"><strong>P. Específico 4:</strong> ¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la resiliencia tecnológica de un instituto de Tarapoto, 2026?</div>
+                                        <div><strong>Obj. Específico 4:</strong> Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la resiliencia tecnológica de un instituto en la ciudad de Tarapoto durante el año 2026.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 5 -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span>D5: Capacidad de Recuperación de Procesos Críticos</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div style="margin-bottom: 8px;"><strong>P. Específico 5:</strong> ¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la capacidad de recuperación de procesos críticos de un instituto de Tarapoto, 2026?</div>
+                                        <div><strong>Obj. Específico 5:</strong> Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la capacidad de recuperación de procesos críticos de un instituto en la ciudad de Tarapoto durante el año 2026.</div>
+                                    </div>
+                                </div>
+
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: ANTECEDENTES Y MARCO TEÓRICO -->
+            <section data-background-image="assets/image3.png" class="slide-scroll">
+                <div class="glass-container">
+                    <h2>Bases Teóricas y Antecedentes</h2>
+                    <p style="font-size: 0.8rem !important; margin-bottom: 20px !important; color:#64748B;">Estudios científicos recientes que respaldan la viabilidad y el rigor metodológico de este proyecto.</p>
+                    
+                    <div class="theories-grid">
+                        
+                        <!-- Card 1: Alheadary -->
+                        <div class="theory-card">
+                            <div class="theory-card-header">
+                                <span class="theory-author">Alheadary</span>
+                                <span class="theory-year">2023</span>
+                            </div>
+                            <div class="theory-title">
+                                Hacia el desarrollo de un modelo de evaluación de riesgos de seguridad para el entorno empresarial de Arabia Saudita basado en la norma ISO/IEC 27005 ISRM.
+                            </div>
+                            <div class="theory-contribution">
+                                <strong>Aporte Teórico:</strong> Desarrolló el modelo integral CSRAM mediante ciencia de diseño, estructurándolo en seis etapas (identificación, evaluación de vulnerabilidades, análisis, evaluación, tratamiento y monitoreo). Validó de forma rigurosa que esta herramienta es completa y cubre satisfactoriamente las directrices del estándar para la gestión de seguridad corporativa.
+                            </div>
+                            <div class="theory-source">
+                                <i class="fa-solid fa-book-open"></i> Scientific Research Publishing
+                            </div>
+                            <a href="https://www.scirp.org/journal/paperinformation?paperid=126165" target="_blank" class="theory-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver artículo científico
+                            </a>
+                        </div>
+
+                        <!-- Card 2: Putra y Soewito -->
+                        <div class="theory-card">
+                            <div class="theory-card-header">
+                                <span class="theory-author">Putra y Soewito</span>
+                                <span class="theory-year">2023</span>
+                            </div>
+                            <div class="theory-title">
+                                Metodología integrada para la gestión de riesgos de seguridad de la información utilizando ISO 27005:2018 y NIST SP 800-30 para el sector asegurador.
+                            </div>
+                            <div class="theory-contribution">
+                                <strong>Aporte Teórico:</strong> Diseñó estrategias para mitigar vulnerabilidades críticas en ERP del sector asegurador. Integró la evaluación de riesgos de la ISO/IEC 27005 con directrices específicas de NIST SP 800-30, proponiendo controles estructurados bajo ISO/IEC 27002:2022 para un tratamiento altamente efectivo y continuo.
+                            </div>
+                            <div class="theory-source">
+                                <i class="fa-solid fa-book-open"></i> Rev. Ciencias de la Computación SAI
+                            </div>
+                            <a href="https://thesai.org/Publications/ViewPaper?Volume=14&Issue=4&Code=IJACSA&SerialNo=68" target="_blank" class="theory-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver artículo científico
+                            </a>
+                        </div>
+
+                        <!-- Card 3: Junior y Arima -->
+                        <div class="theory-card">
+                            <div class="theory-card-header">
+                                <span class="theory-author">Junior y Arima</span>
+                                <span class="theory-year">2023</span>
+                            </div>
+                            <div class="theory-title">
+                                Gestión De Riesgos Cibernéticos y la Norma Iso 27005 Aplicadas En Las Organizaciones: Una Revisión Sistemática De La Literatura.
+                            </div>
+                            <div class="theory-contribution">
+                                <strong>Aporte Teórico:</strong> Analizó a través del protocolo PRISMA-P cómo las regulaciones de privacidad impulsan la adopción de la ISO 27005. Concluyó que las organizaciones logran optimizar la seguridad interna y el cumplimiento normativo para responder satisfactoriamente a las exigencias legales y las expectativas de los stakeholders.
+                            </div>
+                            <div class="theory-source">
+                                <i class="fa-solid fa-book-open"></i> Revista Foco
+                            </div>
+                            <a href="https://ojs.focopublicacoes.com.br/foco/article/view/1188" target="_blank" class="theory-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver artículo científico
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: METODOLOGÍA (DISEÑO Y TIPO) -->
+            <section data-background-image="assets/image3.png" class="slide-scroll">
+                <div class="glass-container">
+                    <h2>Metodología de Investigación</h2>
+                    
+                    <div class="methodology-layout">
+                        <!-- Left: Circle Node System -->
+                        <div class="circle-system">
+                            <div class="connecting-ring"></div>
+                            
+                            <div class="circle-center">
+                                <i class="fa-solid fa-gears"></i>
+                                <span>METODOLOGÍA</span>
+                            </div>
+                            
+                            <!-- Node 1: Enfoque -->
+                            <div class="interactive-node node-enfoque active" data-node="enfoque">
+                                <span class="node-title">Enfoque</span>
+                                <span class="node-value">Cuantitativo</span>
+                            </div>
+                            
+                            <!-- Node 2: Tipo -->
+                            <div class="interactive-node node-tipo" data-node="tipo">
+                                <span class="node-title">Tipo</span>
+                                <span class="node-value">Aplicada</span>
+                            </div>
+                            
+                            <!-- Node 3: Diseño -->
+                            <div class="interactive-node node-diseño" data-node="diseño">
+                                <span class="node-title">Diseño</span>
+                                <span class="node-value">Preexp. Transv.</span>
+                            </div>
+                            
+                            <!-- Node 4: Alcance -->
+                            <div class="interactive-node node-alcance" data-node="alcance">
+                                <span class="node-title">Alcance</span>
+                                <span class="node-value">Descriptivo</span>
+                            </div>
+                        </div>
+
+                        <!-- Right: Interactive Info Display Card -->
+                        <div class="methodology-details-card" id="methodology-details">
+                            <div class="details-content">
+                                <h3><i class="fa-solid fa-chart-column text-primary"></i> Enfoque Cuantitativo</h3>
+                                <h5 class="text-secondary" style="font-size:0.85rem; margin-top:2px; margin-bottom:12px; font-weight:600; text-transform:uppercase;">Medición objetiva y análisis estadístico</h5>
+                                <p>La investigación se realiza bajo un enfoque cuantitativo. Utiliza la recolección de datos y la medición numérica de los indicadores de continuidad operativa (pretest y postest) para probar hipótesis sobre relaciones de causa-efecto basadas en el análisis estadístico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6-9: OPERACIONALIZACIÓN DE VARIABLES -->
+            <section data-background-image="assets/image3.png" class="slide-scroll">
+                <div class="glass-container" style="max-width: 96%;">
+                    <h2>Operacionalización de Variables</h2>
+                    
+                    <div class="op-panel">
+                        <!-- Variable Switch Tabs -->
+                        <div class="op-tabs">
+                            <button class="op-tab active" data-tab="independiente">
+                                <i class="fa-solid fa-shield-halved"></i> V. Independiente: Gestión de Riesgos (ISO 27005)
+                            </button>
+                            <button class="op-tab" data-tab="dependiente">
+                                <i class="fa-solid fa-clock-rotate-left"></i> V. Dependiente: Continuidad Operativa
+                            </button>
+                        </div>
+
+                        <!-- Tab 1: Variable Independiente -->
+                        <div class="op-view active" id="view-independiente">
+                            <div class="op-sidebar">
+                                <div class="op-definition-box">
+                                    <div><strong>Def. Conceptual:</strong> Proceso sistemático y automatizado para identificar, analizar, evaluar y tratar los riesgos que afectan la CID de la información, conforme a ISO/IEC 27005.</div>
+                                    <div><strong>Def. Operacional:</strong> Se medirá a través del grado de aplicación automatizada de las etapas del proceso de gestión mediante el software propuesto.</div>
+                                </div>
+                                <div class="op-dimensions-title">Dimensiones de la Variable</div>
+                                <button class="dimension-button active" data-var="independiente" data-dim="contexto">
+                                    <span>1. Establecimiento del contexto</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="independiente" data-dim="identificacion">
+                                    <span>2. Identificación de riesgos</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="independiente" data-dim="analisis">
+                                    <span>3. Análisis de riesgos</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="independiente" data-dim="evaluacion">
+                                    <span>4. Evaluación de riesgos</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="independiente" data-dim="tratamiento">
+                                    <span>5. Tratamiento de riesgos</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="independiente" data-dim="monitoreo">
+                                    <span>6. Monitoreo y revisión</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="op-details-panel">
+                                <h3>Establecimiento del contexto</h3>
+                                <div class="indicator-list">
+                                    <!-- Dynamic content loaded via JS -->
+                                </div>
+                                <div class="scale-badge">
+                                    <strong>Escala de medición:</strong> <span>Escala ordinal (No implementado, Parcialmente implementado, Implementado)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Variable Dependiente -->
+                        <div class="op-view" id="view-dependiente">
+                            <div class="op-sidebar">
+                                <div class="op-definition-box">
+                                    <div><strong>Def. Conceptual:</strong> Gestión sostenida que identifica funciones críticas y desarrolla estrategias para continuar o minimizar efectos de interrupciones (NIST SP 800-34 / ISO 22301).</div>
+                                    <div><strong>Def. Operacional:</strong> Medición cuantitativa del estado de resiliencia antes (pretest) y después (postest) de la intervención tecnológica.</div>
+                                </div>
+                                <div class="op-dimensions-title">Dimensiones de la Variable</div>
+                                <button class="dimension-button" data-var="dependiente" data-dim="disponibilidad">
+                                    <span>1. Disponibilidad de servicios críticos</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="dependiente" data-dim="respuesta">
+                                    <span>2. Tiempo de respuesta ante incidentes</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="dependiente" data-dim="recuperacion">
+                                    <span>3. Capacidad de recuperación de procesos</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="dependiente" data-dim="resiliencia">
+                                    <span>4. Resiliencia tecnológica</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <button class="dimension-button" data-var="dependiente" data-dim="preparacion">
+                                    <span>5. Preparación organizacional</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="op-details-panel">
+                                <h3>Disponibilidad de servicios críticos</h3>
+                                <div class="indicator-list">
+                                    <!-- Dynamic content loaded via JS -->
+                                </div>
+                                <div class="scale-badge">
+                                    <strong>Escala de medición:</strong> <span>Escala ordinal (Bajo, Medio, Alto)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 10: METODOLOGÍA - POBLACIÓN, MUESTRA Y TÉCNICAS -->
+            <section data-background-image="assets/image3.png" class="slide-scroll">
+                <div class="glass-container">
+                    <h2>Población, Muestra y Técnicas de Datos</h2>
+                    
+                    <div class="columns-3-layout">
+                        <!-- Col 1: Población -->
+                        <div class="col-card">
+                            <div class="col-card-header">
+                                <i class="fa-solid fa-users-rectangle"></i>
+                                <h3>Población y Muestra</h3>
+                            </div>
+                            <div class="col-card-body">
+                                <p><strong>Población:</strong> Constituida por los procesos críticos soportados por sistemas informáticos en el instituto. Se distribuyen en tres pilares:</p>
+                                <div class="processes-list">
+                                    <div class="process-item">
+                                        <strong>Académicos:</strong> matrícula, registro de notas, gestión de horarios y seguimiento académico.
+                                    </div>
+                                    <div class="process-item">
+                                        <strong>Administrativos:</strong> tesorería, logística, gestión documentaria y talento humano.
+                                    </div>
+                                    <div class="process-item">
+                                        <strong>Tecnológicos:</strong> administración de sistemas, gestión de redes, respaldo de información y control de accesos.
+                                    </div>
+                                </div>
+                                <p style="margin-top: 10px;"><strong>Muestra:</strong> No se aplica muestreo. Al evaluar al 100% de la población, el estudio es de tipo <strong>censal</strong>.</p>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: Técnicas -->
+                        <div class="col-card">
+                            <div class="col-card-header">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                <h3>Técnicas e Instrumentos</h3>
+                            </div>
+                            <div class="col-card-body">
+                                <p><strong>Técnicas:</strong> El análisis documental, la observación directa y la aplicación de instrumentos estructurados.</p>
+                                <p><strong>Instrumento principal:</strong> Lista de verificación institucional estructurada según las directrices de continuidad.</p>
+                                
+                                <button class="btn-instrumento" id="btn-ver-instrumentos">
+                                    <i class="fa-solid fa-file-invoice"></i> Ver Instrumento (5 Items/Var)
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Col 3: Confiabilidad y Análisis -->
+                        <div class="col-card">
+                            <div class="col-card-header">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <h3>Análisis y Validación</h3>
+                            </div>
+                            <div class="col-card-body">
+                                <p><strong>Validación:</strong> Por medio de juicio de expertos. <strong>Confiabilidad:</strong> No aplica por las características del instrumento checklist.</p>
+                                <p><strong>Análisis:</strong> Estadística descriptiva e inferencial no paramétrica (prueba de rangos con signo de Wilcoxon) para contrastar el pretest contra el postest.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 11: RECURSOS Y FINANCIAMIENTO -->
+            <section data-background-image="assets/image3.png" class="slide-scroll">
+                <div class="glass-container">
+                    <h2>Aspectos Administrativos: Presupuesto</h2>
+                    
+                    <div class="budget-layout">
+                        <!-- Left side: Summary -->
+                        <div class="budget-summary">
+                            <div class="stat-box">
+                                <div class="stat-label">Costo Total del Proyecto</div>
+                                <div class="stat-value">S/. 6,856.60</div>
+                            </div>
+                            
+                            <!-- Side-by-side comparison tables (Monetarios vs No Monetarios) -->
+                            <div class="budget-table-comparison">
+                                <div class="budget-table-box">
+                                    <h4>Recursos No Monetarios</h4>
+                                    <div class="budget-table-rows">
+                                        <div class="budget-table-row"><span>Recursos Humanos</span><span>S/. 1,200.00</span></div>
+                                        <div class="budget-table-row"><span>Servicios de Terceros</span><span>S/. 480.60</span></div>
+                                        <div class="budget-table-row"><span>Equipos</span><span>S/. 3,000.00</span></div>
+                                        <div class="budget-table-row"><span>Pasajes y Viáticos</span><span>S/. 50.00</span></div>
+                                        <div class="budget-table-row"><span>Materiales e Insumos</span><span>S/. 50.00</span></div>
+                                        <div class="budget-table-row"><strong>Subtotal</strong><strong>S/. 4,780.60</strong></div>
+                                    </div>
+                                </div>
+                                <div class="budget-table-box">
+                                    <h4>Recursos Monetarios</h4>
+                                    <div class="budget-table-rows">
+                                        <div class="budget-table-row"><span>Recursos Humanos</span><span>S/. 1,200.00</span></div>
+                                        <div class="budget-table-row"><span>Servicios de Terceros</span><span>S/. 360.00</span></div>
+                                        <div class="budget-table-row"><span>Equipos</span><span>S/. 200.00</span></div>
+                                        <div class="budget-table-row"><span>Pasajes y Viáticos</span><span>S/. 80.00</span></div>
+                                        <div class="budget-table-row"><span>Materiales e Insumos</span><span>S/. 236.00</span></div>
+                                        <div class="budget-table-row"><strong>Subtotal</strong><strong>S/. 2,076.00</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right side: Graphical Breakdown -->
+                        <div class="budget-breakdown-card">
+                            <h3>Distribución Global de Recursos</h3>
+                            <div class="chart-bar-container">
+                                
+                                <!-- RRHH -->
+                                <div class="chart-bar-item">
+                                    <div class="chart-bar-label-row">
+                                        <span class="chart-bar-label">Recursos Humanos (RH)</span>
+                                        <span class="chart-bar-value">S/. 2,400.00 (35%)</span>
+                                    </div>
+                                    <div class="chart-bar-track">
+                                        <div class="chart-bar-fill" data-width="35%"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Equipos -->
+                                <div class="chart-bar-item">
+                                    <div class="chart-bar-label-row">
+                                        <span class="chart-bar-label">Equipos y Bienes Duraderos (EBD)</span>
+                                        <span class="chart-bar-value">S/. 3,200.00 (47%)</span>
+                                    </div>
+                                    <div class="chart-bar-track">
+                                        <div class="chart-bar-fill" data-width="47%"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Terceros -->
+                                <div class="chart-bar-item">
+                                    <div class="chart-bar-label-row">
+                                        <span class="chart-bar-label">Servicios de Terceros (ST)</span>
+                                        <span class="chart-bar-value">S/. 840.60 (12%)</span>
+                                    </div>
+                                    <div class="chart-bar-track">
+                                        <div class="chart-bar-fill" data-width="12%"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Materiales -->
+                                <div class="chart-bar-item">
+                                    <div class="chart-bar-label-row">
+                                        <span class="chart-bar-label">Materiales, Insumos y Viáticos (MI/PV)</span>
+                                        <span class="chart-bar-value">S/. 416.00 (6%)</span>
+                                    </div>
+                                    <div class="chart-bar-track">
+                                        <div class="chart-bar-fill" data-width="6%"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div style="font-size: 0.72rem; color:#64748B; line-height: 1.4; margin-top: 25px; border-top: 1px solid #F1F5F9; padding-top: 15px;">
+                                <strong>Financiamiento:</strong> Autofinanciado con Recursos Propios por los investigadores, valorizando infraestructura preexistente (recursos no monetarios).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: CRONOGRAMA -->
+            <section data-background-image="assets/image3.png" class="slide-scroll">
+                <div class="glass-container" style="max-width: 96%; padding: 25px 30px;">
+                    <h2>Cronograma de Ejecución</h2>
+                    
+                    <div class="gantt-container">
+                        <div class="gantt-grid">
+                            
+                            <!-- Header Row -->
+                            <div class="gantt-header-cell first">Actividades del Proyecto</div>
+                            <div class="gantt-header-cell">S1</div>
+                            <div class="gantt-header-cell">S2</div>
+                            <div class="gantt-header-cell">S3</div>
+                            <div class="gantt-header-cell">S4</div>
+                            <div class="gantt-header-cell">S5</div>
+                            <div class="gantt-header-cell">S6</div>
+                            <div class="gantt-header-cell">S7</div>
+                            <div class="gantt-header-cell">S8</div>
+                            <div class="gantt-header-cell">S9</div>
+                            <div class="gantt-header-cell">S10</div>
+                            <div class="gantt-header-cell">S11</div>
+                            <div class="gantt-header-cell">S12</div>
+                            <div class="gantt-header-cell">S13</div>
+                            <div class="gantt-header-cell">S14</div>
+                            <div class="gantt-header-cell">S15</div>
+                            <div class="gantt-header-cell">S16</div>
+
+                            <!-- Row 1: Adaptación -->
+                            <div class="gantt-row">
+                                <div class="gantt-cell activity-name">1. Adaptación a formato de tesis</div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 1"></div></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                            </div>
+
+                            <!-- Row 2: Recopilación -->
+                            <div class="gantt-row">
+                                <div class="gantt-cell activity-name">2. Recopilación de información</div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 1-3"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 1-3"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 1-3"></div></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                            </div>
+
+                            <!-- Row 3: Análisis -->
+                            <div class="gantt-row">
+                                <div class="gantt-cell activity-name">3. Análisis de datos</div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 3-4"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 3-4"></div></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                            </div>
+
+                            <!-- Row 4: Discusión -->
+                            <div class="gantt-row">
+                                <div class="gantt-cell activity-name">4. Discusión de resultados</div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 4-6"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 4-6"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 4-6"></div></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                            </div>
+
+                            <!-- Row 5: Conclusiones -->
+                            <div class="gantt-row">
+                                <div class="gantt-cell activity-name">5. Conclusiones y recomendaciones</div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 7-8"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 7-8"></div></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                            </div>
+
+                            <!-- Row 6: Elaboración de artículo -->
+                            <div class="gantt-row">
+                                <div class="gantt-cell activity-name">6. Elaboración del artículo</div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 9-13"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 9-13"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 9-13"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 9-13"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 9-13"></div></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                            </div>
+
+                            <!-- Row 7: Postulación -->
+                            <div class="gantt-row">
+                                <div class="gantt-cell activity-name">7. Postulación a revista indizada</div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 13-15"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 13-15"></div></div>
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 13-15"></div></div>
+                                <div class="gantt-bar-cell"></div>
+                            </div>
+
+                            <!-- Row 8: Sustentación -->
+                            <div class="gantt-row">
+                                <div class="gantt-cell activity-name">8. Sustentación de informe de tesis</div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div>
+                                <div class="gantt-bar-cell"></div> <!-- Semana 15 is empty now -->
+                                <div class="gantt-bar-cell"><div class="gantt-bar" title="Semana 16"></div></div> <!-- Week 16 has the bar -->
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="gantt-legend">
+                        <div class="gantt-legend-item">
+                            <div class="gantt-legend-color"></div>
+                            <span>Ejecución Planificada de Tareas</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 13: CIERRE / GRACIAS -->
+            <section class="slide-scroll">
+                <div style="text-align: center; margin-top: 4%;">
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; margin-bottom: 30px;">
+                        <img src="ucv.logo-Photoroom.png" alt="Escudo UCV" style="height: 110px; object-fit: contain;">
+                        <div style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 800; color: #FFFFFF; letter-spacing: 2px; text-transform: uppercase;">
+                            UNIVERSIDAD CÉSAR VALLEJO
+                        </div>
+                    </div>
+                    <h1 style="font-size: 3.8rem !important; color: #FFFFFF !important; font-weight: 800 !important; margin-bottom: 20px !important;">
+                        ¡Muchas Gracias!
+                    </h1>
+                    <div style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 600; color: #E5E5E5 !important; margin-bottom: 35px;">
+                        Gestión automatizada de riesgos de seguridad de la información
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 50px; margin-top: 30px;">
+                        <div style="text-align: center;">
+                            <div style="font-weight: 700; color: #FFFFFF !important; font-size:0.95rem;">Bustamante Barturen, J. J.</div>
+                            <div style="font-size:0.75rem; color: rgba(255, 255, 255, 0.7) !important; margin-top:2px;">Autor</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-weight: 700; color: #FFFFFF !important; font-size:0.95rem;">Ruiz Tangoa, R. N.</div>
+                            <div style="font-size:0.75rem; color: rgba(255, 255, 255, 0.7) !important; margin-top:2px;">Autor</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Custom Navigation Controls Overlays -->
+    <div class="custom-controls">
+        <button class="custom-nav-btn" id="btn-prev" title="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="custom-nav-btn" id="btn-next" title="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Instrument Modal -->
+    <div class="instrumentos-modal" id="modal-instrumentos">
+        <div class="instrumentos-modal-content">
+            <button class="modal-close-btn" id="btn-modal-close" title="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-file-shield text-accent"></i> Lista de Verificación Institucional</h3>
+                <p style="font-size:0.78rem !important; color:#64748B; margin-top: -10px; margin-bottom: 20px;">Los 5 ítems críticos utilizados en el instrumento de recolección de datos para cada variable bajo estudio.</p>
+            </div>
+            <div class="modal-split-grid">
+                <!-- Variable 1 Card -->
+                <div class="modal-col-card">
+                    <h4>Variable 1: Gestión de Riesgos (ISO 27005)</h4>
+                    <div class="modal-items-list">
+                        <div class="modal-item-row">
+                            <span class="num">1.</span>
+                            <span>Se cuenta con un inventario de activos de información críticos estructurado y clasificado según confidencialidad, integridad y disponibilidad.</span>
+                        </div>
+                        <div class="modal-item-row">
+                            <span class="num">2.</span>
+                            <span>Se han identificado, registrado y clasificado sistemáticamente las amenazas y vulnerabilidades que afectan la infraestructura TI del instituto.</span>
+                        </div>
+                        <div class="modal-item-row">
+                            <span class="num">3.</span>
+                            <span>El sistema realiza de forma automatizada la estimación de riesgos multiplicando probabilidad de ocurrencia e impacto de incidentes.</span>
+                        </div>
+                        <div class="modal-item-row">
+                            <span class="num">4.</span>
+                            <span>Existe una matriz de priorización automatizada para identificar riesgos no aceptables que requieren tratamiento correctivo inmediato.</span>
+                        </div>
+                        <div class="modal-item-row">
+                            <span class="num">5.</span>
+                            <span>Se definen, aplican y monitorean controles de seguridad basados en la norma ISO 27002 para mitigar el riesgo residual de forma continua.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Variable 2 Card -->
+                <div class="modal-col-card">
+                    <h4>Variable 2: Continuidad Operativa</h4>
+                    <div class="modal-items-list">
+                        <div class="modal-item-row">
+                            <span class="num">1.</span>
+                            <span>Se garantiza la disponibilidad del servicio y tiempo de actividad (uptime) en los sistemas críticos (Académico, Tesorería y Admisión).</span>
+                        </div>
+                        <div class="modal-item-row">
+                            <span class="num">2.</span>
+                            <span>Se cuenta con procedimientos documentados y tiempos mínimos de respuesta ante incidentes de seguridad digital detectados.</span>
+                        </div>
+                        <div class="modal-item-row">
+                            <span class="num">3.</span>
+                            <span>Se ejecutan, auditan y verifican periódicamente respaldos de información (backups) y procesos de restauración ante pérdida de datos.</span>
+                        </div>
+                        <div class="modal-item-row">
+                            <span class="num">4.</span>
+                            <span>La infraestructura tecnológica dispone de mecanismos de redundancia activos (en conectividad, servidores y energía eléctrica).</span>
+                        </div>
+                        <div class="modal-item-row">
+                            <span class="num">5.</span>
+                            <span>Se dispone de planes estructurados de continuidad operativa y recuperación ante desastres (DRP) conocidos por el personal clave.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reveal.js & Script Config -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="presentation.js"></script>
+    <script>
+        // Initialize Reveal.js
+        Reveal.initialize({
+            width: 1080,
+            height: 720,
+            margin: 0.04,
+            minScale: 0.2,
+            maxScale: 2.0,
+            controls: false, // Hide default controls to use custom ones
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'fade', // 'none' | 'fade' | 'slide' | 'convex' | 'concave' | 'zoom'
+            transitionSpeed: 'default', // 'default' | 'fast' | 'slow'
+            backgroundTransition: 'fade',
+            dependencies: []
+        });
+
+        // Bind Custom Navigation Buttons
+        document.getElementById('btn-prev').addEventListener('click', () => Reveal.prev());
+        document.getElementById('btn-next').addEventListener('click', () => Reveal.next());
+
+        // Dynamic Header Logo & Visibility Control
+        Reveal.on('ready', event => {
+            toggleHeaderFooterVisibility(event.indexh);
+        });
+
+        Reveal.on('slidechanged', event => {
+            toggleHeaderFooterVisibility(event.indexh);
+        });
+
+        function toggleHeaderFooterVisibility(slideIndex) {
+            const header = document.querySelector('.presentation-header');
+            const footer = document.querySelector('.presentation-footer');
+            const customControls = document.querySelector('.custom-controls');
+            
+            // Hide header, footer, and custom navigation on title slide (Slide 0) and final slide (Slide 12)
+            if (slideIndex === 0 || slideIndex === 12) {
+                header.style.opacity = '0';
+                header.style.pointerEvents = 'none';
+                footer.style.opacity = '0';
+                
+                if (slideIndex === 0) {
+                    customControls.style.display = 'flex'; // Keep controls visible to navigate
+                }
+            } else {
+                header.style.opacity = '1';
+                header.style.pointerEvents = 'auto';
+                footer.style.opacity = '1';
+                customControls.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>

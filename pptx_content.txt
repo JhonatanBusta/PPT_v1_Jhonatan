@@ -1,0 +1,391 @@
+=== SLIDE1 ===
+Gestión automatizada de riesgos de seguridad de información basada en ISO/IEC 27005 para continuidad operativa en instituto de Tarapoto, 2026 
+Autores:
+Bustamante Barturen, José 
+Jhonatan
+ (ORCID: 0000-0003-4134-8698) 
+Ruiz 
+Tangoa
+, Ray Nixon (ORCID: 0000-0001-6863-194 X)
+Escuela: 
+Ingeniera de Sistemas
+Campus: 
+Tarapoto
+Asesor:
+Mg. 
+Callacná
+ Ponce, Luis Gibson
+Proyecto de investigación
+
+=== SLIDE2 ===
+La digitalización educativa en Tarapoto avanza sin gestión formal de riesgos. Esta carencia vulnera drásticamente la seguridad de la información, exponiendo a la institución a incidentes cibernéticos y fallas sistémicas que paralizan los procesos y quiebran la continuidad operativa.
+ q la empresa o sector donde está investigando. 
+
+=== SLIDE3 ===
+Problemas, objetivos
+e hipótesis
+Problema general
+Objetivo general
+Hipótesis general
+¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la continuidad operativa en un instituto de Tarapoto, 2026?
+Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la continuidad operativa de un instituto en la ciudad de Tarapoto durante el año 2026. 
+Sostiene que la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide de manera positiva en la continuidad operativa de un instituto de Tarapoto durante el año 2026
+Problemas específicos
+Objetivos específicos
+¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la disponibilidad de los servicios críticos para la continuidad en un instituto de Tarapoto, 2026?
+Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la disponibilidad de los servicios críticos de un instituto en la ciudad de Tarapoto durante el año 2026.
+¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide  en el tiempo de respuesta ante incidentes para la continuidad en un instituto de Tarapoto, 2026?.
+Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la capacidad de respuesta de incidentes de un instituto en la ciudad de Tarapoto durante el año 2026.
+¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la capacidad de recuperación de procesos para la continuidad en un instituto de Tarapoto, 2026?.
+Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la capacidad de recuperación de procesos de un instituto en la ciudad de Tarapoto durante el año 2026.
+¿De qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide la resiliencia tecnológica y preparación organizacional para la continuidad en un instituto de Tarapoto, 2026?.
+Determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la resiliencia trcnológica de un instituto en la ciudad de Tarapoto durante el año 2026.
+
+=== SLIDE4 ===
+Teoría o aporte teórico
+que fundamente la investigación
+Autor (es) y fecha
+(Apellidos y año)
+Título de investigación y tipo
+Aporte teórico
+¿Dónde se encuentra publicado?
+Alheadary
+ (2023)
+Hacia el desarrollo de un modelo de evaluación de riesgos de seguridad para el entorno empresarial de Arabia Saudita basado en la norma ISO/IEC 27005 ISRM.
+Demostró con su modelo CSRAM que el estándar ISO 27005 ofrece una robustez integral para proteger activos. 
+En la revista científica 
+de Seguridad de la Información de la Editorial: 
+Scientific
+ 
+Research
+ Publishing
+Putra y 
+Soewito
+ (2023)
+Metodología integrada para la gestión de riesgos de seguridad de la información utilizando ISO 27005:2018 y NIST SP 800-30 para el sector asegurador.
+Lograron controles efectivos al integrar esta norma con las guías del NIST. 
+Revista Internacional de Ciencias de la Computación Avanzadas y Aplicaciones.  
+SAI
+Junior y Arima (2023)
+Gestión De Riesgos Cibernéticos y la Norma 
+Iso
+ 27005 Aplicadas En Las Organizaciones: Una Revisión Sistemática De La Literatura
+Concluyeron que adoptar este estándar es la clave para cumplir con las regulaciones y optimizar la protección organizacional.
+Revista Foco 
+
+=== SLIDE5 ===
+Alcance
+tipo censal
+Diseño
+Preexperimental-transversal
+Tipo y diseño
+ de investigación
+Tipo
+Aplicada
+Enfoque
+Cuantitativo
+
+=== SLIDE6 ===
+Tabla de operacionalización
+Variable: 
+Gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005
+Definición conceptual
+Definición operacional
+Dimensiones
+Indicadores
+Escala de medición
+Proceso sistemático y automatizado para identificar, analizar, evaluar y tratar los riesgos que afectan la confidencialidad, integridad y disponibilidad de la información, conforme a las directrices establecidas por la norma ISO/IEC 27005 [44].
+Se medirá a través del grado de aplicación automatizada de las etapas del proceso de gestión de riesgos definidas por ISO/IEC 27005 en el instituto, mediante el uso de un sistema informático orientado al registro, evaluación, monitoreo y seguimiento de riesgos de seguridad de la información.
+Establecimiento del contexto
+Definición del alcance de la gestión automatizada de riesgos de seguridad de la información
+Escala ordinal (No implementado, Parcialmente implementado, Implementado)
+Establecimiento de criterios formales de probabilidad e impacto
+Identificación de riesgos
+Registro y documentación automatizada de activos críticos de información
+Registro y gestión automatizada de amenazas sobre activos de información
+Identificación y registro de vulnerabilidades asociadas a activos críticos
+Documentación y vinculación automatizada de eventos de riesgo
+Análisis de riesgos
+Estimación de la probabilidad de ocurrencia de riesgos
+Evaluación del impacto sobre la confidencialidad, integridad y disponibilidad de la información
+
+=== SLIDE7 ===
+Tabla de operacionalización
+Variable: 
+Gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005
+Definición conceptual
+Definición operacional
+Dimensiones
+Indicadores
+Escala de medición
+Proceso sistemático y automatizado para identificar, analizar, evaluar y tratar los riesgos que afectan la confidencialidad, integridad y disponibilidad de la información, conforme a las directrices establecidas por la norma ISO/IEC 27005 [44].
+Se medirá a través del grado de aplicación automatizada de las etapas del proceso de gestión de riesgos definidas por ISO/IEC 27005 en el instituto, mediante el uso de un sistema informático orientado al registro, evaluación, monitoreo y seguimiento de riesgos de seguridad de la información.
+Evaluación del riesgo
+Priorización de riesgos mediante criterios definidos
+Escala ordinal (No implementado, Parcialmente implementado, Implementado)
+Definición de riesgos aceptables y no aceptables
+Tratamiento del riesgo
+Definición de opciones de tratamiento para riesgos no aceptables
+Selección de controles de seguridad en función del riesgo identificado
+Evaluación del riesgo residual posterior a la aplicación de controles
+Monitoreo y revisión
+Monitoreo periódico automatizado de riesgos identificados
+Revisión y actualización periódica del proceso de gestión automatizada de riesgos
+Seguimiento automatizado de tratamientos aplicados a riesgos identificados
+Generación de información para seguimiento y control de riesgos de seguridad de la información
+
+=== SLIDE8 ===
+Tabla de operacionalización
+Variable: 
+Continuidad operativa
+Definición conceptual
+Definición operacional
+Dimensiones
+Indicadores
+Escala de medición
+Gestión sostenida que identifica funciones críticas y desarrolla estrategias para continuar o minimizar efectos de interrupciones [45], [46].
+Se medirá mediante la evaluación de las dimensiones de la continuidad operativa antes y después de la implementación de la gestión automatizada de riesgos, utilizando una matriz de evaluación aplicada como pretest y 
+postest
+.
+Disponibilidad de servicios críticos
+Disponibilidad de sistemas de información críticos
+Escala ordinal (Bajo, Medio, Alto)
+Accesibilidad de la información institucional para usuarios autorizados
+Tiempo de respuesta ante incidentes
+Detección oportuna de incidentes de seguridad
+Existencia de procedimientos para atención de incidentes
+Capacidad de recuperación de procesos
+Recuperación de sistemas críticos dentro de tiempos aceptables
+Restauración de información mediante respaldos confiables
+
+=== SLIDE9 ===
+Tabla de operacionalización
+Variable: 
+Continuidad operativa
+Definición conceptual
+Definición operacional
+Dimensiones
+Indicadores
+Escala de medición
+Gestión sostenida que identifica funciones críticas y desarrolla estrategias para continuar o minimizar efectos de interrupciones [45], [46].
+Se medirá mediante la evaluación de las dimensiones de la continuidad operativa antes y después de la implementación de la gestión automatizada de riesgos, utilizando una matriz de evaluación aplicada como pretest y 
+postest
+.
+Resiliencia tecnológica
+Existencia de mecanismos de redundancia tecnológica
+Escala ordinal (Bajo, Medio, Alto)
+Protección de infraestructura frente a fallas y accesos no autorizados
+Preparación organizacional para la continuidad
+Existencia de planes documentados de continuidad operativa
+Conocimiento de procedimientos y responsabilidades ante incidentes
+Seguimiento de eventos que afectan la continuidad operativa
+
+=== SLIDE10 ===
+Población y muestra
+Técnicas e instrumentos para recolección de datos
+Técnicas de análisis aplicadas
+Población y muestra
+Técnicas e Instrumentos a aplicar
+¿Confiabilidad?
+¿Se validó los instrumentos?
+¿Qué técnicas de análisis de información se aplicó?
+No aplica
+L
+a población será 
+Procesos críticos soportados por sistemas IT (Académicos, Administrativos, Tecnológicos).
+Lista de verificación
+El análisis documental, la observación directa y la aplicación de instrumentos estructurados
+No aplica
+
+=== SLIDE11 ===
+Aspectos administrativos
+Recursos y financiamiento
+Recursos
+Costo total
+Entidad financiadora
+No monetarios
+Recursos humanos
+1.200.00
+Recursos Propios 
+ 
+Servicios de terceros
+480.00
+Equipos y bienes duraderos
+3.000.00
+Pasajes y viáticos
+50.00
+Materiales e insumos
+50.00
+Monetarios
+Recursos humanos
+1
+.200.00
+Recursos Propios 
+Servicios de terceros
+360.00
+Equipos y bienes duraderos
+200.00
+Pasajes y viáticos
+80.00
+Materiales e insumos
+236.00
+Financiamiento de recursos del proyecto de investigación
+
+=== SLIDE12 ===
+Aspectos administrativos
+Cronograma de ejecución
+Actividad
+Semana
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+12
+14
+15
+16
+Adaptación a formato de informe de tesis
+X
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Recopilación de información
+X
+X
+X
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Análisis de datos
+ 
+ 
+X
+X
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Discusión de resultados
+ 
+ 
+ 
+X
+X
+X
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Conclusiones y recomendaciones
+ 
+ 
+ 
+ 
+ 
+ 
+X
+X
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Elaboración del artículo
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+X
+X
+X
+X
+X
+ 
+ 
+ 
+Postulación a revista científica indizada
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+X
+X
+X 
+ 
+Sustentación del informe de tesis
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+X 
+Cronograma de ejecución del proyecto de investigación
+
+=== SLIDE13 ===
+

@@ -1,0 +1,561 @@
+FACULTAD DE INGENIERÍA Y ARQUITECTURA
+ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS
+Gestión automatizada de riesgos de seguridad de información basada en ISO/IEC 27005 para continuidad operativa en instituto de Tarapoto, 2026
+Autores: 
+Bustamante Barturen, José Jhonatan (orcid.org/0000-0003-4134-8698)
+Ruiz Tangoa, Ray Nixon (orcid.org/0000-0001-6863-194X)
+Asesor:
+Mg. Callacná Ponce, Luis Gibson (orcid.org/0000-0002-6021-054X)
+Línea de investigación:
+Sistema de Información y Comunicaciones
+Línea de responsabilidad social universitaria:
+Desarrollo económico, empleo y emprendimiento
+TARAPOTO – PERÚ 
+2026
+Declaratoria de autenticidad del asesor (a)
+Declaratoria de originalidad del/los autor/es
+Haga clic o pulse aquí para escribir texto.Índice de contenidos
+Carátula…………………………………………………………………………..…………i
+Índice de tablasv
+Índice de figurasvi
+I.Introducción1
+II.Metodología20
+III.Aspectos administrativos24
+3.1.Recursos24
+3.2.Cronograma de ejecución25
+Referencias26
+Anexos32
+Índice de tablas
+Tabla 1. Recursos no monetarios del proyecto de investigación21
+Tabla 2. Recursos monetarios del proyecto de investigación22
+Tabla 3. Financiamiento de recursos de la investigación23
+Tabla 4. Cronograma de ejecución del proyecto de investigación.24
+Índice de figuras
+Introducción
+La continuidad operativa de las organizaciones depende crecientemente de la disponibilidad y confiabilidad de los sistemas de información que soportan procesos misionales y de soporte. En el caso de instituciones educativas, los servicios digitales sostienen funciones críticas como matrícula, gestión académica, evaluación, emisión de constancias, administración de recursos, comunicaciones institucionales y custodia de información personal de estudiantes, docentes y personal administrativo. En este contexto, la seguridad de la información deja de ser un componente técnico aislado y se convierte en una condición habilitante para la prestación ininterrumpida de servicios y para la preservación de la confianza institucional, especialmente cuando los procesos de gestión de riesgos son automatizados mediante sistemas informáticos orientados a mejorar la capacidad de respuesta y continuidad institucional.
+A nivel mundial, el impacto económico derivado de los incidentes de seguridad sigue en constante aumento, dado que el informe Cost of a Data Breach Report 2024 señala un costo promedio de 4.88 millones de dólares por cada vulneración [1]. lo cual refleja la enorme gravedad de las consecuencias financieras y operativas cuando se comprometen los servicios digitales; además, este panorama se vuelve aún más complejo debido al incremento de ataques dirigidos a vulnerar tanto la disponibilidad como la integridad de los datos, destacando amenazas como el ransomware o las intrusiones directas a los sistemas, las cuales generalmente provocan interrupciones muy extensas, una notable caída en el rendimiento y procesos de recuperación sumamente costosos.
+Dentro del ámbito educativo, la evidencia a nivel internacional demuestra una preocupante exposición frente a ataques cibernéticos que perjudican directamente el funcionamiento de las instituciones, puesto que el informe The State of Ransomware in Education 2024 detalla que, tras sufrir un secuestro de datos, aproximadamente la mitad de los equipos informáticos resultan comprometidos, evidenciando así el enorme riesgo de paralización que enfrentan las plataformas y servicios esenciales [2]; asimismo, diversos análisis de organizaciones especializadas respaldan esta tendencia al señalar que, a pesar de ligeras fluctuaciones anuales, la educación sigue destacando como uno de los sectores más golpeados, debiendo enfrentar constantes dificultades tanto para contener estas amenazas como para lograr restablecer sus operaciones normales luego de un incidente [3].
+Por su parte, en Europa los diagnósticos institucionales también reflejan una alta frecuencia de incidentes cibernéticos dentro del sector educativo, situación que queda en evidencia con el informe Cyber Security Breaches Survey 2025 del gobierno del Reino Unido, el cual reporta que durante el último año los ataques afectaron al 60% de las escuelas secundarias, al 85% de los institutos de educación superior y hasta a un 91% de las universidades, demostrando así un nivel de exposición muy superior al del promedio empresarial [4]; sumado a esto, el reporte ENISA Threat Landscape 2024 advierte que las principales amenazas son aquellas dirigidas a vulnerar la disponibilidad de los sistemas, seguidas de cerca por el ransomware y los ataques directos a los datos, un escenario que concuerda totalmente con el riesgo operativo que asumen hoy en día las organizaciones que dependen de sus servicios digitales para mantener el ritmo de sus actividades cotidianas [5].
+En el contexto latinoamericano, diversas publicaciones de referencia regional han hecho énfasis en el constante incremento y la persistencia de amenazas cibernéticas como el ransomware y la fuga de datos, poniendo en evidencia los grandes desafíos estructurales relacionados con las capacidades de prevención, respuesta y recuperación, sobre todo en aquellas organizaciones que enfrentan fuertes limitaciones presupuestales y de especialización técnica [6], siendo este un escenario que cobra una relevancia particular dentro del ámbito educativo, ya que en estas instituciones la rápida expansión de los servicios digitales suele avanzar a un ritmo mucho más acelerado que la propia consolidación de las prácticas formales enfocadas en la gestión de riesgos y la continuidad operativa.
+En el caso del Perú, esta problemática se hace evidente ante la urgencia de fortalecer las capacidades locales frente a la constante aparición de incidentes cibernéticos, tal como lo demuestra el Centro Nacional de Seguridad Digital de la Presidencia del Consejo de Ministros mediante la publicación continua de alertas técnicas sobre amenazas dirigidas a entidades públicas y privadas, confirmando la plena vigencia de este riesgo a nivel nacional [7]; a esto se suman los reportes de diversos medios de comunicación que destacan los esfuerzos coordinados de protección durante eventos de alta exposición, donde se han llegado a prevenir múltiples intentos de ciberataques en plenas actividades internacionales, reafirmando la presencia de un entorno de amenazas muy dinámico que podría paralizar servicios esenciales [8], un escenario que finalmente concuerda con varios análisis institucionales sobre la posición del país en los índices globales de ciberseguridad, los cuales subrayan la necesidad de enfrentar estos retos a través de un enfoque mucho más sistemático centrado en la gestión del riesgo [9].
+A nivel local, específicamente en la región San Martín, la creciente expansión de los servicios digitales dentro de las instituciones educativas ha incrementado drásticamente la dependencia operativa hacia la infraestructura tecnológica y los datos, elevando así la exposición ante posibles caídas del sistema, pérdida de información o accesos no autorizados; no obstante, dado que los reportes públicos suelen mostrar cifras generales a nivel nacional y rara vez permiten evaluar estos riesgos con la precisión que demanda un caso real, se vuelve indispensable desarrollar diagnósticos aplicados y mecanismos de gestión que logren vincular de forma directa la seguridad de la información con la continuidad operativa, sobre todo al enfocarnos en una unidad de análisis tan específica como lo es un instituto ubicado en la ciudad de Tarapoto.
+Dentro del contexto descrito, la creciente dependencia tecnológica en las instituciones educativas ha elevado notablemente la exposición a riesgos que vulneran la seguridad de la información y, por ende, la continuidad de los servicios académicos y administrativos; sin embargo, a pesar de que estos sistemas sostienen procesos críticos, en muchas ocasiones su administración se ha manejado de forma puramente reactiva, dándole prioridad a la resolución de los incidentes solo cuando ya han ocurrido, en lugar de apostar por una identificación, análisis y tratamiento sistemático de las amenazas que los originan.
+Dentro del ámbito de los institutos de educación superior, esta problemática se hace evidente a través de la falta de procesos formales para gestionar de forma automatizada los riesgos de seguridad de la información, sumado a la escasa documentación de los activos críticos y la carencia de criterios definidos para medir el impacto o la probabilidad de los eventos adversos; una situación que se agrava por la ausencia de mecanismos estructurados que permitan priorizar estas amenazas bajo estándares internacionales, trayendo como consecuencia que cualquier incidente relacionado con la caída de los sistemas, la pérdida de datos o los accesos no autorizados termine generando graves interrupciones operativas, retrasos en la atención y un claro deterioro de la confianza por parte de la comunidad educativa.
+Aterrizando en la región San Martín, y más concretamente en la ciudad de Tarapoto, los institutos educativos han ido adoptando de forma progresiva diversas plataformas digitales para optimizar su gestión académica, administrativa y de comunicación; sin embargo, este rápido avance hacia la digitalización no siempre ha ido de la mano con la aplicación de metodologías formales ni herramientas para la gestión automatizada de riesgos de seguridad de la información capaces de prever posibles caídas del sistema y mitigar su impacto en las operaciones diarias, lo cual genera una importante brecha que inevitablemente se traduce en una mayor vulnerabilidad de estas instituciones ante cualquier evento que ponga en peligro la disponibilidad, la integridad y la confidencialidad de sus datos.
+Frente a este escenario, resulta indispensable aplicar un enfoque sistemático para la gestión automatizada de los riesgos de seguridad de la información apoyado en la norma ISO/IEC 27005, el cual permita identificar, analizar, evaluar y tratar las amenazas que rodean a los sistemas del instituto; por consiguiente, surge la urgencia de integrar estas tareas en un sistema informático que facilite tanto el registro como el monitoreo continuo de dichas vulnerabilidades para salvaguardar la continuidad de los procesos críticos, puesto que la actual carencia de herramientas tecnológicas representa una grave limitación que impide a la institución reaccionar a tiempo ante cualquier evento que ponga en jaque la disponibilidad, integridad y confidencialidad de sus datos.
+Tomando en cuenta la fuerte dependencia tecnológica que existe hoy en día para llevar a cabo los procesos académicos y administrativos dentro de los institutos de educación superior, sumado a la evidente falta de metodologías formales enfocadas en la gestión automatizada de riesgos de seguridad de la información, nace la imperiosa necesidad de analizar de qué manera la adopción de un enfoque sistemático podría ayudar a disminuir la vulnerabilidad operativa de estas organizaciones; por lo que resulta sumamente relevante evaluar el impacto directo que tendría una gestión bien estructurada sobre la capacidad real de las instituciones para sostener y recuperar sus actividades frente a cualquier evento que atente contra la seguridad de su información.
+Por otro lado, la presente investigación se vincula directamente con los Objetivos de Desarrollo Sostenible establecidos por la Organización de las Naciones Unidas, en particular con aquellos orientados a fortalecer las capacidades institucionales, la educación de calidad y la resiliencia de las organizaciones frente a riesgos que puedan afectar su funcionamiento. 
+Bajo esta premisa, la presente investigación se encuentra estrechamente alineada con el Objetivo de Desarrollo Sostenible 4 enfocado en la Educación de Calidad, cuyo propósito es garantizar una enseñanza inclusiva y equitativa que brinde oportunidades de aprendizaje continuo para toda la comunidad; un desafío que está profundamente ligado a la continuidad operativa de los servicios educativos, puesto que su correcto funcionamiento depende en gran medida de la disponibilidad y confiabilidad de los sistemas informáticos que respaldan tanto el ámbito académico como el administrativo, motivo por el cual implementar una gestión automatizada de riesgos de seguridad de la información se convierte en una pieza fundamental para evitar cualquier interrupción en las atenciones y contribuir de forma tangible a la excelencia institucional.
+De igual manera, esta investigación guarda una estrecha relación con el Objetivo de Desarrollo Sostenible 9 enfocado en la Industria, innovación e infraestructura, el cual subraya la urgencia de construir bases tecnológicas fiables, sostenibles y resilientes, además de impulsar el aprovechamiento eficiente de las herramientas digitales; por tal motivo, la implementación de un modelo sistemático para la gestión automatizada de riesgos bajo el estándar ISO/IEC 27005 resulta fundamental para fortalecer la infraestructura de la institución, ya que facilita la detección oportuna de vulnerabilidades y disminuye la exposición ante diversas amenazas, optimizando así la capacidad de respuesta y recuperación frente a cualquier incidente que intente quebrar la continuidad operativa.
+En consecuencia, el presente estudio contribuye directamente a la consecución de los Objetivos de Desarrollo Sostenible, ya que impulsa la adopción de diversas prácticas enfocadas en garantizar la resiliencia tecnológica y sostener los servicios educativos en el tiempo, logrando además optimizar la administración de la institución a través de la aplicación de normativas internacionales en materia de seguridad de la información.
+En este contexto, el problema de investigación se formula a partir de la relación entre la gestión automatizada de riesgos de seguridad de la información y la continuidad operativa en un instituto ubicado en la ciudad de Tarapoto, región San Martín, donde la digitalización de los servicios educativos no siempre ha estado acompañada de prácticas formales orientadas a la identificación, análisis y tratamiento de riesgos; por lo tanto, surge la interrogante principal orientada a determinar ¿de qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la continuidad operativa en un instituto de Tarapoto, 2026?; de la cual se desprenden los problemas específicos que buscan responder, los cuales son: ¿de qué manera la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide en la disponibilidad de los servicios críticos, tiempo de respuesta ante incidentes, capacidad de recuperación de procesos, resiliencia tecnológica y preparación organizacional para la continuidad en un instituto de Tarapoto, 2026?.
+La presente investigación se justifica a partir de la urgente necesidad de fortalecer la capacidad que tienen los institutos de educación superior tecnológica pública para administrar de forma sistemática y automatizada los riesgos de seguridad de la información que perjudican el funcionamiento de sus sistemas informáticos y, por ende, la propia continuidad de sus operaciones; una situación que cobra especial relevancia si consideramos que, en un entorno donde existe una dependencia cada vez mayor hacia las herramientas tecnológicas para brindar atenciones académicas y administrativas, la evidente falta de metodologías formales orientadas a identificar, analizar y tratar estas amenazas termina incrementando la vulnerabilidad de la institución frente a cualquier evento capaz de paralizar sus actividades y mermar drásticamente la calidad del servicio educativo.
+Desde una perspectiva académica, el presente estudio aporta significativamente al campo de la Ingeniería de Sistemas al adoptar la norma ISO/IEC 27005 como marco metodológico para gestionar de manera automatizada los riesgos de seguridad de la información, logrando así marcar una clara diferencia frente a aquellos enfoques tradicionales que se limitan únicamente al estricto cumplimiento normativo o a la aplicación aislada de controles; por consiguiente, esta investigación impulsa el desarrollo de conocimiento práctico al fusionar la automatización y la evaluación de vulnerabilidades con la propia continuidad de las operaciones, demostrando de forma tangible la estrecha relación que existe entre ambos conceptos dentro de un entorno educativo tan específico.
+En el ámbito práctico, esta investigación hace posible el desarrollo y la implementación de un sistema informático capaz de gestionar una matriz automatizada de riesgos enfocada en la seguridad de la información, lo cual facilita enormemente la identificación, registro, evaluación, monitoreo y tratamiento de estas amenazas bajo un enfoque estructurado y replicable; convirtiendo a este producto tecnológico en una valiosa herramienta de apoyo para la toma de decisiones, diseñada estratégicamente para disminuir los niveles de vulnerabilidad y potenciar la capacidad del instituto al momento de sostener o recuperar sus operaciones frente a cualquier incidente que comprometa sus datos.
+Finalmente, desde una perspectiva tanto institucional como social, este estudio contribuye a fortalecer la resiliencia tecnológica de las instituciones educativas al promover la continuidad de aquellos servicios que sostienen los procesos de enseñanza y gestión académica; de este modo, al perfeccionar la gestión automatizada de riesgos y asegurar la operatividad, la investigación termina apoyando indirectamente la calidad del servicio educativo y reforzando la confianza que tiene toda la comunidad en los sistemas de información que respaldan sus actividades diarias.
+El principal objetivo de esta investigación es determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la continuidad operativa de un instituto en la ciudad de Tarapoto durante el año 2026. Asimismo, los objetivos específicos buscan determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en la norma ISO/IEC 27005 en la disponibilidad de los servicios críticos, respuesta de incidentes, capacidad de recuperación de procesos y resiliencia trcnológica de un instituto en la ciudad de Tarapoto durante el año 2026.
+Para poder corroborar la incidencia y valía de este proyecto, se muestran diferentes investigaciones como la de Putra y Soewito (2023), quienes buscaron mitigar las vulnerabilidades de los sistemas ERP en el sector asegurador ante el avance disruptivo de la Industria 4.0, su objetivo fue diseñar estrategias de gestión de riesgos integrando los marcos ISO/IEC 27005:2018 y la guía NIST SP 800-30 como metodología de evaluación. Los resultados permitieron determinar la aceptabilidad de los riesgos detectados tras un análisis exhaustivo. Finalmente, concluyeron con la propuesta de controles basados en ISO/IEC 27002:2022 para garantizar un tratamiento efectivo de la seguridad de la información [10].
+Por su parte Alheadary (2023), buscó resolver la redundancia y especificidad limitada de los modelos previos para proteger activos en organizaciones de Arabia Saudita. Su objetivo fue desarrollar el modelo integral CSRAM, basado en el estándar ISO/IEC 27005, utilizando una metodología de ciencia de diseño. El modelo resultante se estructura en seis etapas: identificación de amenazas, evaluación de vulnerabilidades, análisis, evaluación, tratamiento y monitoreo de riesgos. Los resultados de la validación confirmaron que el CSRAM es completo y cubre satisfactoriamente todos los lineamientos del estándar internacional. Concluyó que esta herramienta es una solución integral y robusta para la gestión de seguridad en dicho contexto nacional [11].
+Por otro lado, Junior y Arima (2023), analizaron cómo las leyes de privacidad impulsan a las organizaciones a usar estándares internacionales para gestionar riesgos de ciberseguridad. El objetivo fue identificar las motivaciones para adoptar la norma ISO 27005 en sistemas productivos, empleando una metodología de revisión sistemática de literatura bajo el protocolo PRISMA-P. Los resultados sugirieron que las empresas buscan mejorar sus procesos internos de gestión y evaluación de riesgos por razones funcionales e institucionales. Concluyeron que la adopción de este estándar es clave para cumplir con regulaciones legales, satisfacer a los grupos de interés y optimizar la seguridad de la información organizacional [12].
+También Parsola (2023), en su investigación aborda la necesidad de un enfoque proactivo para proteger a las organizaciones de los ciberataques que amenazan su reputación y finanzas. El objetivo fue analizar los conceptos y mejores prácticas del análisis de riesgos para fortalecer la seguridad organizacional. La metodología se basó en la evaluación del panorama de amenazas y la implementación de marcos de gestión integrales. Como resultado, se destaca la importancia de una estrategia flexible que combine soluciones tecnológicas con la concienciación del personal. Concluyó que la seguridad robusta solo se logra mediante el monitoreo continuo, la planificación de respuesta a incidentes y una cultura de prevención constante [13]. 
+Por su parte Marquez et al. (2024), buscaron fortalecer la resiliencia organizacional mediante la creación de un sistema de gestión de seguridad flexible e integrable. Su objetivo fue proponer un modelo que vincule la gestión de riesgos empresariales con la gobernanza y la dimensión operativa. El estudio evidenció un desarrollo limitado de modelos especializados para evaluar la madurez de sistemas de gestión en el ámbito académico, asimismo, se identificó una carencia de modelos orientados a la seguridad organizacional vinculada con la gobernanza y la gestión de riesgos; concluyeron que el modelo propuesto constituye un respaldo científico útil para profesionales, empresas y organizaciones [14]. 
+Por otro lado, Kesa [15], tuvo como objetivo identificar los desafíos relacionados con la implementación de los planes de recuperación ante desastres (DRP) y la continuidad del negocio de tecnologías de la información (BC); la metodología se centró en el análisis de problemáticas y vacíos que existían sobre DRP y BC en el ámbito de TI; los resultados evidenciaron que la implementación de estrategias de recuperación y continuidad presenta diversas dificultades técnicas y organizacionales, además de limitaciones en la integración de tecnologías emergentes. Se concluyó que aún existen importantes brechas de investigación relacionadas con el uso de tecnologías avanzadas y la integración de soluciones innovadoras para fortalecer la recuperación eficiente y la continuidad operativa en entornos tecnológicos.
+También se tiene a Basile [16], cuyo objetivo de su investigación fue estandarizar la protección del software como parte de un proceso de gestión de riesgos basado en el enfoque National Institute of Standards and Technology SP800-39, además de analizar modelos, métodos y construcciones necesarias para formalizar y automatizar actividades relacionadas con la protección frente a ataques MATE; la metodología consistió en el análisis de enfoques estructurados de gestión de riesgos; los resultados evidenciaron que la automatización de actividades de análisis de riesgos facilita la protección del software y fortalece la toma de decisiones de las partes interesadas. El autor concluye que la seguridad del software debe ser tratada como un proceso integral de gestión de riesgos.
+Por su parte Flores y Perugachi [17], tuvieron como objetivo proponer un enfoque innovador de gestión de riesgos basado en el modelado de amenazas, orientado a la mejora de estimación y mitigación de riesgos; la metodología integró técnicas de modelización de amenazas junto con los lineamientos de las normas ISO 27005 y 27001/27002; los resultados evidenciaron que la combinación de STRIDE y árboles de ataque fortalece la identificación, análisis y tratamiento de amenazas de seguridad de manera más precisa y estructurada; los autores concluyeron que el enfoque propuesto mejora significativamente la gestión de riesgos al integrar estándares internacionales de seguridad y regulaciones de protección de datos.
+La metodología consistió en una revisión exhaustiva de literatura sobre resiliencia, estándares internacionales y modelos de gobernanza de seguridad. Como resultado, se identificó una brecha científica respecto a modelos de madurez que faciliten la integración práctica de la seguridad en los procesos de negocio. Concluyeron que el modelo propuesto brinda un soporte científico valioso para organizaciones de cualquier tamaño o sector que busquen mejorar su capacidad de recuperación y protección [14].
+Con respecto al marco teórico, la seguridad de la información es un concepto fundamental en la gestión moderna de organizaciones, definido como el conjunto de medidas preventivas y reactivas orientadas a proteger la información frente a accesos no autorizados, modificaciones o destrucción, con el fin de garantizar la integridad, confidencialidad y disponibilidad de los datos que son críticos para las operaciones institucionales [18].
+La digitalización de procesos ha ampliado el papel de la seguridad de la información más allá de la protección básica de datos, convirtiéndola en un componente habilitante de la continuidad operativa y la resiliencia institucional en contextos dependientes de servicios tecnológicos [19].
+En el sector educativo esta importancia se intensifica debido a la gestión de grandes volúmenes de información sensible sobre estudiantes, docentes y procesos académicos y administrativos, así como por la dependencia creciente de plataformas digitales para la enseñanza, la evaluación y la administración educativa [20].
+Por otro lado, diversos estudios han señalado que, aunque la mayoría de las instituciones educativas han adoptado tecnologías digitales, muchas aún enfrentan desafíos estructurales para implementar prácticas robustas de seguridad de la información, lo que incrementa su vulnerabilidad frente a amenazas como el acceso no autorizado, la alteración de datos o la interrupción de servicios [21].
+Además, la literatura académica reciente resalta que garantizar la seguridad de la información en entornos educativos exige no solo la aplicación de controles tecnológicos, sino también la adopción de enfoques holísticos que integren la gestión de riesgos, la concienciación del personal y usuarios, y el alineamiento con normas y marcos internacionales de gestión de seguridad [22].
+En este contexto, la seguridad de la información se vuelve indispensable para proteger los activos digitales de una institución educativa y para asegurar que las operaciones académicas y administrativas continúen funcionando de manera ininterrumpida, confiable y efectiva, contribuyendo así a la calidad y resiliencia de los servicios educativos [20].
+Con respecto a la gestión automatizada de riesgos de seguridad de la información constituye un enfoque sistemático para discriminar, realizar análisis, someter a evaluación y mitigar los riesgos que pueden afectar la protección de los activos de información de una organización. El objetivo fundamental de esta disciplina es garantizar que los riesgos se controlen dentro de niveles tolerables, apoyando así la toma de decisiones y la asignación de recursos para proteger los procesos críticos y los datos sensibles de una institución [23].
+En contextos donde las organizaciones dependen cada vez más de tecnologías digitales, como es el caso de instituciones educativas, la gestión automatizada de riesgos de seguridad de la información se ha convertido en una práctica esencial para anticipar eventos adversos, mitigar vulnerabilidades y fortalecer la resiliencia operativa. El enfoque de gestión de riesgos permite no solo reaccionar ante incidentes una vez ocurridos, sino establecer acciones preventivas con base en el análisis estructurado de las amenazas y las debilidades de los sistemas [24]. 
+La automatización en la gestión de riesgos de seguridad de la información conlleva el uso de sistemas informáticos para respaldar de forma estructurada y continua tareas clave como el registro de activos, la identificación de amenazas o vulnerabilidades, la evaluación de riesgos, el monitoreo de incidentes y el respectivo seguimiento de los tratamientos aplicados; en este sentido, adoptar este modelo permite centralizar los datos, mejorar la trazabilidad y disminuir la carga de los procesos manuales, lo cual favorece una respuesta mucho más rápida y eficiente ante cualquier evento que ponga en peligro las operaciones de la institución; un beneficio que además es respaldado por diferentes perspectivas contemporáneas, las cuales destacan cómo la automatización logra optimizar todo este proceso al facilitar tanto el análisis constante como la actualización dinámica de la información vinculada a la seguridad organizacional.
+La gestión automatizada de riesgos de seguridad de la información va mucho más allá de una simple implementación aislada de controles técnicos, puesto que integra elementos organizacionales, de procesos y de decisiones estratégicas; lo cual implica analizar los activos de información dentro de su propio entorno operativo para establecer criterios de riesgo adecuados, calcular probabilidades e impactos, priorizar cualquier evento adverso y elegir tratamientos que sean eficientes y proporcionales a las amenazas detectadas, logrando con este enfoque estructurado fortalecer enormemente la capacidad de la institución tanto para reaccionar ante incidentes como para asegurar la continuidad de sus operaciones frente a panoramas desfavorables [25]; por tal motivo, la literatura especializada resalta que una administración de riesgos correctamente ejecutada actúa como un gran impulsor de la seguridad organizacional al proporcionar un lenguaje común que facilita la comunicación, fomenta la transparencia al tomar decisiones y respalda el cumplimiento de normativas internacionales, permitiendo además que los responsables logren priorizar sus inversiones hacia controles de protección y tácticas de resiliencia operativa que reduzcan drásticamente la posibilidad de sufrir interrupciones en los servicios críticos [26].
+Por otro lado a nivel de normativa, la norma ISO/IEC 27005 es un estándar internacional que proporciona directrices específicas para la gestión automatizada de riesgos de seguridad de la información, sirviendo como apoyo especializado dentro de la familia de normas ISO 27000 para enfocar de manera sistemática la identificación, análisis, evaluación, tratamiento y monitoreo de riesgos que afectan a los activos de información en cualquier tipo de organización [23]. A diferencia de otras normas generales de gestión de riesgos, ISO/IEC 27005 se centra de manera explícita en los riesgos vinculados a la confidencialidad, integridad y disponibilidad de la información, lo que la convierte en una herramienta metodológica apropiada para instituciones que operan y dependen de sistemas de información críticos. Su propósito principal es ofrecer un marco estructurado y repetible que facilite a los responsables de seguridad de la información planificar y aplicar un proceso continuo de gestión de riesgos alineado con los requisitos de un Sistema de Gestión de Seguridad de la Información (SGSI) conforme a ISO 27001 [27].
+También se precisa que la ISO/IEC 27005 no es una norma de certificación por sí misma, pero se concibe como un complemento de ISO 27001 al proporcionar orientación detallada sobre la forma de gestionar los riesgos, integrando las prácticas de identificación de amenazas, análisis de impacto y probabilidad, y selección de tratamientos de riesgo ajustados al contexto organizacional y a su tolerancia al riesgo [28]. El enfoque metodológico propuesto por ISO/IEC 27005 establece una secuencia estructurada que inicia con la definición del contexto organizacional y de los criterios de riesgo, para posteriormente identificar amenazas, vulnerabilidades y activos críticos. A partir de ello, se desarrollan actividades de análisis y evaluación destinadas a determinar el nivel de riesgo y priorizar aquellos eventos que requieren tratamiento mediante acciones de mitigación, aceptación, transferencia o evitación, de acuerdo con las necesidades institucionales [29]. Además, ISO/IEC 27005 enfatiza que la gestión de riesgos debe ser un proceso dinámico y continuo, con actividades de comunicación, consulta con los actores relevantes y monitoreo permanente de los riesgos y de los controles implementados para asegurar su eficacia y adecuación en el tiempo. Esta naturaleza iterativa permite que las organizaciones puedan adaptarse a la evolución de amenazas, cambios tecnológicos y variaciones en el entorno organizacional, fortaleciendo así su resiliencia operativa [30]. Es por ello que la adopción de un enfoque basado en ISO/IEC 27005 favorece la toma de decisiones informadas sobre la asignación de recursos para la protección de activos de información críticos y la priorización de acciones de tratamiento basadas en criterios medibles, lo cual contribuye a una gestión de riesgos más transparente, rastreable y alineada con las mejores prácticas internacionales de seguridad de la información [27].
+Con referencia a los controles de seguridad de la información, estos constituyen el conjunto de medidas técnicas, organizativas y procedimentales destinadas a reducir los riesgos que afectan a los activos de información de una organización. Estos controles se implementan como respuesta a los riesgos identificados durante el proceso de gestión de riesgos y tienen como finalidad proteger la confidencialidad, integridad y disponibilidad de la información, así como asegurar la continuidad de los servicios que dependen de los sistemas de información [23]. 
+Dentro del ámbito de la seguridad de la información, los controles no deben implementarse de manera aislada o genérica, sino que resulta fundamental seleccionarlos y priorizarlos basándose en los riesgos específicos que enfrenta la organización; en este sentido, la literatura especializada hace hincapié en que la verdadera eficacia de estas medidas depende directamente de qué tan bien estén alineadas con el entorno institucional, la criticidad de los activos y el nivel de tolerancia al riesgo previamente definido, un factor que termina por reafirmar la imperiosa necesidad de trabajar siempre bajo un enfoque estructurado y centrado en la gestión de vulnerabilidades [31].
+En este mismo sentido, la norma ISO/IEC 27002 ofrece un valioso código de buenas prácticas que agrupa de manera estructurada diversos controles de seguridad de la información, los cuales se organizan en dominios que cubren áreas clave como la gestión de accesos, la protección física y ambiental, el resguardo de activos, la seguridad operativa, el manejo de incidentes y la continuidad del negocio; de modo que este estándar funciona como una excelente guía a nivel internacional para respaldar la elección de las medidas más adecuadas durante la fase de tratamiento de riesgos, logrando su propósito sin la necesidad de imponer exigencias obligatorias de certificación [23]
+Esta ISO/IEC 27002 se concibe como un complemento fundamental de las normas ISO/IEC 27001 e ISO/IEC 27005, puesto que permite traducir los riesgos previamente evaluados en acciones de mitigación totalmente concretas a través de controles específicos; de esta manera, la norma facilita enormemente la implementación de medidas que sean proporcionales al nivel de riesgo detectado, logrando evitar aquellos enfoques reactivos o excesivos que no terminan de ajustarse a las necesidades reales de la organización [27].
+Desde una perspectiva operativa, la correcta aplicación de los controles de seguridad tiene un impacto directo en la disminución de aquellos incidentes que vulneran la disponibilidad de los sistemas, la integridad de la información o los accesos no autorizados, lo cual permite fortalecer sustancialmente la continuidad operativa de todos los procesos críticos institucionales; siendo esta una tarea que adquiere una relevancia muy especial dentro de las organizaciones educativas, puesto que estas instituciones no solo manejan información personal y académica de carácter sensible, sino que además tienen la responsabilidad de garantizar que sus servicios digitales se presten de manera ininterrumpida para no afectar el desarrollo de sus actividades [5].
+En relación con la variable dependiente, definida aquí como la continuidad operativa, esta se entiende como la aptitud de una organización para sostener sus procesos más críticos y restablecer sus actividades bajo niveles tolerables después de sufrir eventos disruptivos, tales como fallas en la tecnología, ciberataques, desastres naturales o incluso equivocaciones humanas; un concepto que ha cobrado un valor fundamental en aquellas instituciones cuya operatividad diaria descansa sobre sus sistemas de información, puesto que cualquier caída en los servicios digitales tiene el potencial de impactar directamente tanto en la atención al usuario como en el logro de las metas institucionales trazadas [32].
+Visto desde una perspectiva organizacional, la continuidad operativa no se restringe únicamente a la restauración técnica de los equipos, sino que exige una planificación anticipada ante diversos escenarios de interrupción, lo cual implica identificar con precisión los procesos críticos, definir los tiempos máximos permitidos para la recuperación y asignar responsabilidades claras para actuar ante incidentes; por lo tanto, la literatura especializada destaca que esta continuidad es un componente estratégico vital dentro de la gestión institucional, cuyo fin principal es minimizar el impacto de cualquier evento adverso y garantizar la estabilidad en el funcionamiento de la organización [33].
+Dentro del ámbito de los sistemas de información, la continuidad operativa mantiene un vínculo indivisible con la seguridad de la información, puesto que incidentes tales como ataques informáticos, la pérdida de datos o las fallas en la infraestructura tienen el potencial de comprometer seriamente la disponibilidad de los servicios tecnológicos; por esta razón, y de acuerdo con lo planteado por el Instituto Nacional de Estándares y Tecnología (NIST), la planificación de la continuidad junto con la recuperación ante desastres resultan elementos esenciales para proteger los sistemas y asegurar que las organizaciones posean la capacidad de responder y restablecerse oportunamente frente a cualquier interrupción significativa [34].
+Dentro de las instituciones educativas, la continuidad operativa adquiere una relevancia fundamental debido a la estrecha dependencia de las plataformas digitales para llevar a cabo la gestión académica, administrativa y de comunicación institucional; puesto que cualquier interrupción en estos servicios tiene el potencial de generar retrasos significativos en los procesos de enseñanza, comprometer la integridad de la información estudiantil y debilitar la confianza de toda la comunidad educativa; razón por la cual diversos estudios coinciden en que integrar prácticas formales de continuidad permite a estas organizaciones fortalecer su resiliencia frente a posibles incidentes y garantizar, de manera sostenida, la prestación de sus servicios más esenciales [35].
+Asimismo, diversos organismos especializados en ciberseguridad subrayan que una continuidad operativa realmente efectiva exige integrar la gestión automatizada de riesgos de seguridad de la información con planes de continuidad y recuperación, de tal manera que todas las decisiones, tanto preventivas como correctivas, se basen en una identificación y priorización sólida de los riesgos reales; logrando así que este enfoque integrado potencie la capacidad de respuesta de la institución y reduzca al mínimo el tiempo de interrupción de sus servicios más críticos [36], [37].
+La continuidad operativa puede analizarse a través de diversas dimensiones que permiten valorar la capacidad de la institución para sostener y restablecer sus procesos críticos frente a cualquier evento disruptivo; unas dimensiones que reflejan aspectos fundamentales relacionados con la disponibilidad de los servicios, la respuesta oportuna ante incidentes, la recuperación efectiva de las operaciones y la resiliencia tecnológica, contemplando además la preparación organizacional necesaria para enfrentar situaciones que pongan en riesgo el funcionamiento institucional [38].
+Otra dimensión relevante es la capacidad de respuesta ante incidentes, la cual se refiere a la habilidad de la organización para detectar, analizar y gestionar de manera oportuna aquellos eventos que afectan la seguridad de la información y la operatividad de los sistemas; en este sentido, una respuesta eficaz permite contener el impacto inicial del incidente y reducir la propagación de efectos adversos sobre los servicios críticos, razón por la cual, de acuerdo con el NIST, esta capacidad constituye un elemento clave para preservar la continuidad operativa y minimizar las consecuencias de cualquier evento disruptivo en los sistemas de información [39].
+La capacidad de recuperación representa otra dimensión central de la continuidad operativa y se encuentra directamente asociada con la posibilidad de restablecer los sistemas, datos y procesos dentro de tiempos aceptables tras una interrupción; siendo esta una dimensión que suele evaluarse mediante indicadores críticos como el tiempo objetivo de recuperación y el punto objetivo de recuperación, los cuales permiten establecer límites claros y precisos para la restauración de los servicios; por tal motivo, la planificación de la recuperación es considerada una práctica esencial para garantizar que las organizaciones posean la facultad de retomar sus actividades normales tras enfrentar incidentes que comprometan seriamente la seguridad de su información [34].
+Asimismo, la resiliencia de la infraestructura tecnológica constituye una dimensión fundamental que refleja la capacidad de los sistemas, redes y plataformas para resistir fallas y adaptarse a condiciones adversas sin afectar de manera crítica la operación institucional; de tal manera que esta resiliencia se apoya en factores técnicos clave como la redundancia, la segmentación de redes, la protección de equipos y la confiabilidad general de la infraestructura tecnológica; lo cual es respaldado por diversos estudios que señalan cómo una arquitectura resiliente contribuye significativamente a reducir el impacto de los incidentes y a mejorar la continuidad operativa en organizaciones que dependen profundamente de las tecnologías de la información [40].
+Finalmente, la preparación organizacional para la continuidad operativa se refiere al grado en que la institución cuenta con políticas, planes, roles definidos y personal capacitado para enfrentar situaciones de interrupción. Esta dimensión incluye la existencia de planes de continuidad, procedimientos documentados, programas de capacitación y ejercicios de prueba que permitan evaluar la efectividad de las estrategias de respuesta y recuperación. La literatura especializada destaca que la preparación organizacional es un factor determinante para el éxito de la continuidad operativa, ya que incluso infraestructuras tecnológicas avanzadas pueden resultar insuficientes si no existe una adecuada organización y coordinación institucional [33].
+La relación entre la gestión automatizada de riesgos de seguridad de la información y la continuidad operativa se fundamenta en el hecho de que los eventos que comprometen la confidencialidad, integridad o disponibilidad de la información suelen tener un impacto directo en la capacidad de las organizaciones para mantener sus procesos críticos. En este sentido, la gestión de riesgos actúa como un mecanismo preventivo que permite identificar y priorizar amenazas y vulnerabilidades antes de que se materialicen en incidentes con efectos disruptivos sobre la operación institucional [41].
+Diversos marcos y guías internacionales coinciden en que una gestión de riesgos eficaz contribuye significativamente a la continuidad operativa al reducir la probabilidad de ocurrencia de incidentes y minimizar su impacto cuando estos se presentan. El Instituto Nacional de Estándares y Tecnología (NIST) señala que la identificación y evaluación sistemática de riesgos es un componente esencial para la planificación de la continuidad y la recuperación de sistemas de información, ya que permite orientar las estrategias de respuesta y recuperación hacia los escenarios más críticos para la organización [34].
+Desde el enfoque de la norma ISO/IEC 27005, la gestión automatizada de riesgos de seguridad de la información proporciona una estructura metodológica que facilita la toma de decisiones informadas sobre el tratamiento de riesgos, apoyando la selección de controles y medidas que fortalecen la resiliencia operativa. Al establecer criterios de riesgo y evaluar su aceptabilidad, las organizaciones pueden definir acciones preventivas alineadas con sus objetivos operativos, lo que contribuye a asegurar la disponibilidad de los servicios y la recuperación oportuna de los procesos críticos [28].
+La literatura especializada resalta que la continuidad operativa no puede abordarse de manera aislada de la gestión de riesgos, ya que los planes de continuidad y recuperación resultan más efectivos cuando se basan en un conocimiento claro y actualizado de los riesgos que enfrenta la organización. Organismos europeos de ciberseguridad destacan que la integración de la gestión de riesgos con la continuidad operativa permite mejorar la preparación organizacional, optimizar el uso de recursos y reducir los tiempos de interrupción de los servicios esenciales [42].
+En el contexto de organizaciones educativas, esta relación adquiere una relevancia particular debido a la dependencia de plataformas digitales para la gestión académica y administrativa. La aplicación de una gestión automatizada de riesgos de seguridad de la información basada en estándares internacionales permite anticipar escenarios de indisponibilidad, proteger los activos de información y fortalecer la capacidad institucional para responder y recuperarse frente a incidentes que puedan afectar la prestación de servicios educativos [43].
+Con respecto a la hipótesis general de la investigación sostiene que la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide de manera positiva en la continuidad operativa de un instituto de Tarapoto durante el año 2026; por consiguiente, de esta afirmación principal se desprenden las hipótesis específicas orientadas a detallar dicho impacto, las cuales se detallan como la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 incide de manera positiva en la disponibilidad de los servicios críticos, tiempo de respuesta ante incidentes, capacidad de recuperación de los procesos, resiliencia tecnológica, preparación organizacional para la continuidad de un instituto de Tarapoto durante el año 2026 durante el año 2026.
+. 
+Metodología
+Se llevará a cabo bajo un enfoque cuantitativo y de tipo aplicada, en la medida en que se orientará a la solución de un problema concreto a través de la construcción de un sistema informático para la gestión automatizada de riesgos en seguridad de la información, con el propósito de evaluar su influencia en la continuidad operativa de un instituto educativo. Según lo especificado en el Manual de Oslo de la Organización para la Cooperación y el Desarrollo Económicos (OCDE, 2018), la investigación de carácter aplicada se caracteriza por la generación de conocimiento dirigido a un uso práctico específico, criterio que se ajustará a los objetivos del presente estudio. El nivel de investigación será explicativo, ya que se buscará la evaluación de la influencia de una variable independiente sobre una variable dependiente, estableciendo relaciones causales a partir de la aplicación de un proceso sistemático basado en la norma ISO/IEC 27005.
+El diseño adscrito a la investigación será preexperimental con la secuencialidad de pretest–postest orientado a un solo grupo, dado que se efectuará una medición inicial de la continuidad operativa antes de la implementación del sistema de ne mención y una medición posterior una vez aplicada la intervención. 
+El esquema de investigación se corresponde con la siguiente representación: G -- O1 – X -- O2, donde G corresponde al grupo que se desea estudiar, O1 es la medición que le antecede a la investigación, X representa el estímulo, en este caso sería el sistema informático y O2 es la medición posterior a la investigación Este diseño permitirá comparar los resultados obtenidos en ambos momentos y analizar los cambios producidos como consecuencia de implementar del proceso de gestión automatizada de riesgos soportado por el sistema informático, considerando los límites propios de un estudio aplicado en un contexto institucional específico.
+La población del estudio estará conformada por los procesos críticos soportados por sistemas de información del instituto educativo tecnológico donde se realizará el estudio, debido a que dichos procesos participan de forma directa en la continuidad operativa y en la gestión automatizada de riesgos de seguridad de la información. Entre los procesos críticos que se consideran se incluirán los procesos académicos, tales como matrícula, registro de notas, gestión de horarios y seguimiento académico; los procesos administrativos, relacionados con tesorería, logística, gestión documentaria y talento humano; así como los procesos tecnológicos vinculados con la administración de sistemas, gestión de redes, respaldo de información y control de accesos. 
+Debido a que la investigación considerará la totalidad de procesos críticos identificados dentro del alcance del estudio, no habrá selección de muestra ni se aplicará método de muestreo alguno, por lo cual será considerado un estudio de tipo censal, de tal forma que los criterios de inclusión considerarán únicamente aquellos procesos directamente vinculados con la operación institucional y soportados por sistemas de información, mientras que se excluirán aquellos que no tengan incidencia en la continuidad operativa institucional. 
+Para la recolección de información se contará con la participación de responsables de procesos y sistemas institucionales, quienes actuarán como informantes clave debido a su participación directa en la gestión y operación de dichos procesos. La unidad de análisis estará conformada por los procesos críticos soportados por sistemas de información en el instituto educativo.
+La variable independiente corresponde a la gestión automatizada de riesgos de seguridad de la información con base en la ISO/IEC 27005, la cual se operacionalizará a través de las etapas del proceso de gestión de riesgos establecidas en dicha norma, incluyendo el establecimiento del contexto, la identificación, análisis, evaluación y tratamiento de riesgos, así como las actividades de comunicación, consulta, monitoreo y revisión. El componente automatizado estará soportado por un sistema informático orientado al registro, evaluación y seguimiento de riesgos institucionales.
+La variable dependiente será la continuidad operativa, operacionalizada mediante dimensiones relacionadas con la disponibilidad de los servicios críticos, la capacidad de respuesta ante incidentes, la capacidad de recuperación de los procesos, la resiliencia de la infraestructura tecnológica y la preparación organizacional para la continuidad. La definición operacional y conceptual, además de las escalas de medición e indicadores de ambas variables se presentarán en la tabla de operacionalización correspondiente, incluida en los anexos del estudio.
+Para la recolección de datos se emplearán técnicas como el análisis documental, la observación directa y la aplicación de instrumentos estructurados, los cuales se orientan a evaluar los procesos críticos relacionados con la continuidad operativa y la gestión automatizada de riesgos de seguridad de la información. Como instrumentos se utilizarán dos listas de verificación institucionales: una para evaluar la gestión automatizada de riesgos de seguridad basada en ISO/IEC 27005 y otra para evaluar la continuidad operativa, las cuales serán aplicadas como pretest y postest. Los instrumentos serán aplicados con el apoyo de los responsables de procesos como informantes clave, quienes proporcionarán evidencia documental y acceso a los sistemas para verificar el cumplimiento de los criterios establecidos; el objeto de medición son los procesos críticos institucionales, no las percepciones de los informantes; asimismo, se considerarán como evidencia complementaria los registros generados por el sistema académico, el sistema financiero y contable y el registro de incidencias tecnológicas. 
+El procedimiento de la investigación se iniciará con el diagnóstico de la situación inicial mediante la aplicación del pretest, el cual permitirá identificar el estado de la continuidad operativa y el nivel de exposición a riesgos de seguridad de la información. Posteriormente, se procederá a la implementación del sistema informático para la gestión automatizada de riesgos basado en ISO/IEC 27005, que incluirá la identificación de activos, amenazas y vulnerabilidades, la estimación y evaluación de riesgos, la definición de tratamientos y la selección de controles de seguridad. Una vez concluida la implementación, se aplicará el postest con el fin de evaluar los cambios producidos en la continuidad operativa del instituto. El sistema permitirá centralizar la información relacionada con activos, amenazas, vulnerabilidades, niveles de riesgo y controles aplicados, favoreciendo el monitoreo y trazabilidad de los riesgos institucionales.
+El análisis de los datos se realizará mediante técnicas estadísticas descriptivas y comparativas, considerando la medición de los indicadores definidos para cada dimensión de la continuidad operativa en los momentos pretest y postest. Los resultados obtenidos permitirán determinar la influencia de la gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005 sobre la continuidad operativa del instituto, así como sustentar las conclusiones y recomendaciones derivadas del estudio.
+En cuanto a los aspectos éticos, la investigación se llevará a cabo con el debido respeto a los lineamientos de integridad científica, confidencialidad y uso responsable de la información. Se solicitará la autorización correspondiente a la institución para la realización del estudio y se garantizará que la información recolectada sea utilizada exclusivamente con fines académicos. Asimismo, cuando corresponda, se aplicarán procedimientos de consentimiento informado a los participantes involucrados, cuyos formatos y autorizaciones se incluirán en los anexos, resguardando la confidencialidad de los datos institucionales y personales conforme a las disposiciones éticas vigentes.
+Aspectos administrativos
+Recursos
+Tabla 1. Recursos no monetarios del proyecto de investigación
+Recursos humanos
+Investigadores
+CU mensual en soles (U)
+Meses de de desarrollo del proyecto (Q)
+Costo total (U*Q)
+Ruiz Tangoa Ray Nixon
+100
+6 meses
+600
+Bustamante Barturen, José Jhonatan
+100
+6 meses
+600
+Subtotal
+1.200
+Servicios de terceros
+Servicio
+Inid.
+U
+Q
+Costo total (CT) (U*Q)
+Internet
+s/
+60
+6 meses
+360
+Luz
+Kwh
+0,6
+180
+120.6
+Subtotal
+480,6
+Equipos y bienes duraderos
+Bien adquirido
+Unidad de medida (UM)
+U
+Q
+CT
+Computadora portátil personal
+s/
+1.500
+2
+3.000
+Subtotal
+3.000
+Pasajes y viáticos
+Descripción
+UM
+U
+Q
+CT
+Trasporte
+s/
+5
+10
+50
+Subtotal
+50
+Materiales e insumos
+Insumo
+UM
+U
+Q
+CT
+USB 16GB
+Unidad
+50
+1
+50
+Subtotal
+50
+Total de recursos no monetarios
+S/. 4.780,6
+Tabla 2. Recursos monetarios del proyecto de investigación
+Recursos humanos
+Invesatigadores
+U
+Q
+CT
+Ruiz Tangoa Ray Nixon
+100
+6 meses
+600
+Bustamante Barturen, José Jhonatan
+100
+6 meses
+600
+Subtotal
+1.200
+Servicios de terceros
+Servicio adquirido
+UM
+U
+Q
+CT
+Hosting Web
+Mes
+50
+6
+300
+Dominio Web
+Año
+60
+1
+60
+Subtotal
+360.00
+Equipos y bienes duraderos
+Bien
+UM
+U
+Q
+CT
+Impresora
+Unidad
+200
+1
+200
+Subtotal
+200
+Pasajes y viáticos
+Descripción
+UM
+U
+Q
+CT
+Pasajes a nivel local
+Unidad
+S/. 10
+8
+S/. 80
+Subtotal
+S/. 80
+Materiales e insumos
+Nombre del material o insumo
+UM
+U
+Q
+CT
+Papel Bond
+Millar
+45
+0.5
+22.5
+Folder
+Unidad
+8
+2
+16
+Bolígrafos
+Unidad
+3
+5
+15
+Tintas para impresora
+Unidad
+40
+4
+160
+Papel Bond
+Millar
+45
+0.5
+22.5
+Subtotal
+236
+Total de recursos monetarios
+S/. 2.076
+Financiamiento
+Tabla 3. Financiamiento de recursos de la investigación
+Recursos
+Monto
+Entidad financiadora
+No monetarios
+Recursos humanos(RH)
+1.200.00
+Recursos Propios 
+Servicios de terceros(ST)
+480.60
+Equipos y bienes duraderos(EBD)
+3.000.00
+Pasajes y viáticos (PV)
+50.00
+Materiales e insumos(MI)
+50.00
+Subtotal
+4.780,6
+Monetarios
+Recursos humanos(RH)
+1.200.00
+Recursos Propios 
+Servicios de terceros(ST)
+360.00
+Equipos y bienes duraderos(EBD)
+200.00
+Pasajes y viáticos (PV)
+80.00
+Materiales e insumos(MI)
+236.00
+Subtotal
+S/. 2.076.00
+Cronograma de ejecución
+Tabla 4. Cronograma de ejecución del proyecto de investigación.
+Actividad
+Semana
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+Adaptar de formato de informe de tesis
+X
+Recopilar de información
+X
+X
+X
+Analizar de datos
+X
+X
+Discutir de resultados
+X
+X
+X
+Redactar conclusiones y recomendaciones
+X
+X
+Elaborar artículo de investigación
+X
+X
+X
+X
+X
+Postular a revista científica indizada
+X
+X
+Sustentar el informe de tesis
+X
+X
+Referencias
+[1]J. Zorabedian, “Surging data breach disruption drives costs to record highs | IBM”. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://www.ibm.com/think/insights/whats-new-2024-cost-of-a-data-breach-report
+[2]P. Mahendru, “The State of Ransomware in Education 2024”, Sophos. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://www.sophos.com/blog/the-state-of-ransomware-in-education-2024
+[3]J. Gregory, “Reducing ransomware recovery costs in education | IBM”. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://www.ibm.com/think/insights/reducing-ransomware-recovery-costs-in-education
+[4]Department for Science, Innovation & Technology, “Cyber security breaches survey 2025: education institutions findings”, GOV.UK. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://www.gov.uk/government/statistics/cyber-security-breaches-survey-2025/cyber-security-breaches-survey-2025-education-institutions-findings
+[5]ENISA, “ENISA Threat Landscape 2024 | ENISA”. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024
+[6]OEA, “Programa de Ciberseguridad”. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://www.oas.org/ext/es/seguridad/prog-ciber?utm_source=chatgpt.com
+[7]Presidencia del Consejo de Ministros, “Alerta integrada de seguridad digital N° 203-2024-CNSD”. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://www.gob.pe/institucion/pcm/informes-publicaciones/5953522-alerta-integrada-de-seguridad-digital-n-203-2024-cnsd?utm_source=chatgpt.com
+[8]RedacciónRPP, “Perú evitó más de 500 mil ciberataques informáticos durante reunión de líderes APEC, informa la organización”. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://rpp.pe/politica/actualidad/peru-evito-mas-de-500-000-ciberataques-informaticos-durante-la-reunion-de-lideres-del-apec-noticia-1600120
+[9]Presidencia del Consejo de Ministros, “Perú en el Índice Global de Ciberseguridad 2024: retos y oportunidades”. Consultado: el 22 de enero de 2026. [En línea]. Disponible en: https://www.gob.pe/institucion/pcm/informes-publicaciones/6283830-peru-en-el-indice-global-de-ciberseguridad-2024-retos-y-oportunidades?utm_source=chatgpt.com
+[10]A. P. Putra y B. Soewito, “Integrated Methodology for Information Security Risk Management using ISO 27005:2018 and NIST SP 800-30 for Insurance Sector”, Int. J. Adv. Comput. Sci. Appl. IJACSA, vol. 14, núm. 4, abr. 2023, doi: 10.14569/IJACSA.2023.0140468.
+[11]W. G. Alheadary, “Towards Development of a Security Risk Assessment Model for Saudi Arabian Business Environment Based on the ISO/IEC 27005 ISRM Standard”, J. Inf. Secur., vol. 14, núm. 3, pp. 195–211, jul. 2023, doi: 10.4236/jis.2023.143012.
+[12]A. S. C. Junior y C. H. Arima, “CYBER RISK MANAGEMENT AND ISO 27005 APPLIED IN ORGANIZATIONS: A SYSTEMATIC LITERATURE REVIEW”, Rev. FOCO, vol. 16, núm. 02, pp. e1188–e1188, feb. 2023, doi: 10.54751/revistafoco.v16n2-215.
+[13]J. Parsola, “Cybersecurity Risk Assessment and Management for Organizational Security”, NeuroQuantology, jun. 2023, doi: 10.48047/nq.2022.20.5.nq22815.
+[14]J. Marquez-Tejon, M. Jimenez-Partearroyo, y D. Benito-Osorio, “Integrated security management model: a proposal applied to organisational resilience”, Secur. J., vol. 37, núm. 2, pp. 375–398, jun. 2024, doi: 10.1057/s41284-023-00381-6.
+[15]D. M. Kesa, “Ensuring resilience: Integrating IT disaster recovery planning and business continuity for sustainable information technology operations”, World J. Adv. Res. Rev., vol. 18, núm. 3, pp. 970–992, 2023, doi: 10.30574/wjarr.2023.18.3.1166.
+[16]C. Basile, B. D. Sutter, D. Canavese, L. Regano, y B. Coppens, “Design, Implementation, and Automation of a Risk Management Approach for Man-at-the-End Software Protection”, el 27 de marzo de 2023, arXiv: arXiv:2303.15033. doi: 10.48550/arXiv.2303.15033.
+[17]D. A. Flores y R. Perugachi, “A GDPR-compliant Risk Management Approach based on Threat Modelling and ISO 27005”, el 7 de junio de 2023, arXiv: arXiv:2306.04783. doi: 10.48550/arXiv.2306.04783.
+[18]Gob.pe, “¿Qué es la seguridad de la información?” Consultado: el 23 de enero de 2026. [En línea]. Disponible en: https://www.gob.pe/23391-que-es-la-seguridad-de-la-informacion?utm_source=chatgpt.com
+[19]SentinelOne, “¿Qué es la seguridad de la información? Ventajas y retos”, SentinelOne. Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://www.sentinelone.com/es/cybersecurity-101/cybersecurity/what-is-information-assurance/
+[20]A. Hamam, “Cybersecurity in Education”, iSec. Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://isec-group.com/blog/cybersecurity-in-education/
+[21]F. Ibrahim, “Importance of Cybersecurity in Educational Institutions”, 2024. doi: 10.13140/RG.2.2.34745.99681.
+[22]J. Guaña-Moya, “La importancia de la seguridad informática en la educación digital: retos y soluciones”, RECIMUNDO, vol. 7, núm. 1, pp. 609–616, may 2023, doi: 10.26820/recimundo/7.(1).enero.2023.609-616.
+[23]ISO, “ISO 31000:2018”, ISO. Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://www.iso.org/standard/65694.html
+[24]ISACA, “ISACA | Empowering Careers. Advancing Trust in Technology.” Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://www.isaca.org/
+[25]R. S. Ross, “Guide for Conducting Risk Assessments”, NIST, sep. 2012, Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://www.nist.gov/publications/guide-conducting-risk-assessments
+[26]Tracxn, “Threat Sketch - 2025 Company Profile, Team, Funding & Competitors - Tracxn”. Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://tracxn.com/d/companies/threat-sketch/__RgbYb6MA9_S2eBIE5gkQUjXvc15Onkf7Y0P6cl7GlXs#about-the-company
+[27]S. Hernández, “Conexión entre ISO 27005 e ISO 27001: Impulsa tu gestión de riesgos en seguridad de la información”, GlobalSuite Solutions. Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://www.globalsuitesolutions.com/es/iso-27005-vs-iso-27001-gestion-riesgos/
+[28]Egerie, “ISO 27005: Recommendations and guidelines to apply | Egerie”. Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://www.egerie.com/en/resources/blog/iso-27005
+[29]Secureframe, “El Enfoque ISO 27005 para la Gestión de Riesgos de Seguridad de la Información: Explicación de las Actualizaciones de 2022”, Secureframe. Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://secureframe.com/blog/iso-27005
+[30]M. Peters, “RIESGO EMPRESARIAL Y OPERACIONAL - ISO/IEC 27005”, Continuum GRC. Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://continuumgrc.com/es/risk-management-27005/
+[31]NIST, “Cybersecurity Framework”, NIST, nov. 2013, Consultado: el 24 de enero de 2026. [En línea]. Disponible en: https://www.nist.gov/cyberframework
+[32]GlobalSuite Solutions, “ISO 22301 Plan de Continuidad de negocio”, ISO 22301 Plan de Continuidad de negocio. Consultado: el 25 de enero de 2026. [En línea]. Disponible en: https://www.globalsuitesolutions.com/es/iso-22301-continuidad-negocio/
+[33]BSIGroup, “ISO 22301 - Business Continuity Management”, 125BSI. Consultado: el 25 de enero de 2026. [En línea]. Disponible en: https://www.bsigroup.com/en-GB/products-and-services/standards/iso-22301-business-continuity-management/
+[34]M. Swanson, P. Bowen, A. Phillips, D. Gallup, y D. Lynes, “Contingency Planning Guide for Federal Information Systems”, National Institute of Standards and Technology, NIST Special Publication (SP) 800-34 Rev. 1, nov. 2010. doi: 10.6028/NIST.SP.800-34r1.
+[35]M. F. Safitra, M. Lubis, y M. T. Kurniawan, “Cyber Resilience: Research Opportunities”, en Proceedings of the 2023 6th International Conference on Electronics, Communications and Control Engineering, en ICECC ’23. New York, NY, USA: Association for Computing Machinery, ago. 2023, pp. 99–104. doi: 10.1145/3592307.3592323.
+[36]E. Golovkova, “INTEGRATED APPROACH TO INFORMATION SECURITY RISK MANAGEMENT”, Mod. Technol. Sci. Technol. Prog., vol. 2023, núm. 1, pp. 101–102, may 2023, doi: 10.36629/2686-9896-2023-1-101-102.
+[37]EALDE, “Integración de la ciberseguridad en la continuidad de negocio”. Consultado: el 25 de enero de 2026. [En línea]. Disponible en: https://www.ealde.es/ciberseguridad-en-continuidad-de-negocio/
+[38]ISO, “ISO 22301:2019(en), Security and resilience — Business continuity management systems — Requirements”. Consultado: el 25 de enero de 2026. [En línea]. Disponible en: https://www.iso.org/obp/ui/en/#iso:std:iso:22301:ed-2:v1:en
+[39]A. Nelson, S. Rekhi, M. Souppaya, y K. Scarfone, “Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile”, National Institute of Standards and Technology, NIST Special Publication (SP) 800-61 Rev. 3, abr. 2025. doi: 10.6028/NIST.SP.800-61r3.
+[40]W. Liu, M. Shan, S. Zhang, X. Zhao, y Z. Zhai, “Resilience in Infrastructure Systems: A Comprehensive Review”, Buildings, vol. 12, núm. 6, jun. 2022, doi: 10.3390/buildings12060759.
+[41]ISO, “ISO/IEC 27005:2022”, ISO. Consultado: el 26 de enero de 2026. [En línea]. Disponible en: https://www.iso.org/standard/80585.html
+[42]S. Asif y M. Shahzad, “Enterprises’ Financial Performance and Operational Risk Management: A Theoretical Assessment of the Literature”, Qlantic J. Soc. Sci. Humanit., vol. 4, núm. 4, pp. 102–112, dic. 2023, doi: 10.55737/qjssh.826426821.
+[43]V. V. Morales, K. E. C. Villarreal, E. G. F. Sánchez, y J. P. C. Martinez, “Sistema Gestión de Seguridad de la Información y su impacto en el Gobierno y Gestión de las Tecnologías de la Información”, Cienc. Lat. Rev. Científica Multidiscip., vol. 8, núm. 5, pp. 12956–12979, dic. 2024, doi: 10.37811/cl_rcm.v8i6.14758.
+[44]S. Patiño, E. F. Solís, S. G. Yoo, y R. Arroyo, “ICT Risk Management Methodology Proposal for Governmental Entities Based on ISO/IEC 27005”, en 2018 International Conference on eDemocracy & eGovernment (ICEDEG), abr. 2018, pp. 75–82. doi: 10.1109/ICEDEG.2018.8372361.
+[45]E. C. Aguiar, “Contribuição ao estudo do fator risco no desempenho de organizações e cadeias de suprimentos”, tese de doutorado, Universidade de São Paulo, 2010. doi: 10.11606/T.12.2010.tde-08102010-193730.
+[46]A. Rot y M. Pękala, “Tworzenie kopii zapasowych i odzyskiwanie danych jako element systemu zarządzania ciągłością działania organizacji”, Uniwersytet Ekonomiczny we Wrocławiu. Wydawnictwo Uniwersytetu Ekonomicznego we Wrocławiu, 2016. doi: 10.15611/ie.2016.2.07.
+Anexos
+Anexo 1. Tabla de operacionalización de variables.
+Variable
+Definición conceptual
+Definición operacional
+Dimensiones
+Indicadores
+Escala de medición
+Gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005
+Proceso sistemático y automatizado para identificar, analizar, evaluar y tratar los riesgos que afectan la confidencialidad, integridad y disponibilidad de la información, conforme a las directrices establecidas por la norma ISO/IEC 27005 [44].
+Se medirá a través del grado de aplicación automatizada de las etapas del proceso de gestión de riesgos definidas por ISO/IEC 27005 en el instituto, mediante el uso de un sistema informático orientado al registro, evaluación, monitoreo y seguimiento de riesgos de seguridad de la información.
+Establecimiento del contexto
+Definición del alcance de la gestión automatizada de riesgos de seguridad de la información
+Escala ordinal (No implementado, Parcialmente implementado, Implementado)
+Establecimiento de criterios formales de probabilidad e impacto
+Identificación de riesgos
+Registro y documentación automatizada de activos críticos de información
+Registro y gestión automatizada de amenazas sobre activos de información
+Identificación y registro de vulnerabilidades asociadas a activos críticos
+Documentación y vinculación automatizada de eventos de riesgo
+Análisis de riesgos
+Estimación de la probabilidad de ocurrencia de riesgos
+Evaluación del impacto sobre la confidencialidad, integridad y disponibilidad de la información
+Evaluación del riesgo
+Priorización de riesgos mediante criterios definidos
+Definición de riesgos aceptables y no aceptables
+Tratamiento del riesgo
+Definición de opciones de tratamiento para riesgos no aceptables
+Selección de controles de seguridad en función del riesgo identificado
+Evaluación del riesgo residual posterior a la aplicación de controles
+Monitoreo y revisión
+Monitoreo periódico automatizado de riesgos identificados
+Revisión y actualización periódica del proceso de gestión automatizada de riesgos
+Seguimiento automatizado de tratamientos aplicados a riesgos identificados
+Generación de información para seguimiento y control de riesgos de seguridad de la información
+Continuidad operativa
+Gestión sostenida que identifica funciones críticas y desarrolla estrategias para continuar o minimizar efectos de interrupciones [45], [46].
+Se medirá mediante la evaluación de las dimensiones de la continuidad operativa antes y después de la implementación de la gestión automatizada de riesgos, utilizando una matriz de evaluación aplicada como pretest y postest.
+Disponibilidad de servicios críticos
+Disponibilidad de sistemas de información críticos
+Escala ordinal (Bajo, Medio, Alto)
+Accesibilidad de la información institucional para usuarios autorizados
+Tiempo de respuesta ante incidentes
+Detección oportuna de incidentes de seguridad
+Existencia de procedimientos para atención de incidentes
+Capacidad de recuperación de procesos
+Recuperación de sistemas críticos dentro de tiempos aceptables
+Restauración de información mediante respaldos confiables
+Resiliencia tecnológica
+Existencia de mecanismos de redundancia tecnológica
+Protección de infraestructura frente a fallas y accesos no autorizados
+Preparación organizacional para la continuidad
+Existencia de planes documentados de continuidad operativa
+Conocimiento de procedimientos y responsabilidades ante incidentes
+Seguimiento de eventos que afectan la continuidad operativa
+Anexo 2 
+Lista de verificación institucional para la variable: Gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005
+Instrumento para la variable: Gestión automatizada de riesgos de seguridad de la información basada en ISO/IEC 27005
+Leyenda
+Valor
+Significado
+1
+No implementado
+2
+Parcialmente implementado
+3
+Implementado
+Ítem
+Enunciado
+1
+2
+3
+1
+El instituto cuenta con un alcance definido para la gestión automatizada de riesgos de seguridad de la información mediante un sistema informático.
+2
+Se encuentran establecidos criterios formales de probabilidad e impacto para la evaluación de riesgos.
+3
+Los activos de información críticos se encuentran registrados y documentados mediante el sistema de gestión de riesgos.
+4
+Las amenazas que afectan a los activos de información son registradas y gestionadas mediante el sistema informático.
+5
+Las vulnerabilidades asociadas a los activos críticos han sido identificadas y registradas en el sistema.
+6
+Los eventos de riesgo se encuentran documentados y vinculados automáticamente a activos específicos.
+7
+La probabilidad de ocurrencia de los riesgos ha sido estimada mediante criterios definidos.
+8
+El impacto de los riesgos sobre la confidencialidad integridad y disponibilidad ha sido evaluado.
+9
+El instituto cuenta con planes documentados para mantener la continuidad operativa ante incidentes.
+10
+Los riesgos son priorizados mediante criterios definidos dentro del sistema de gestión de riesgos.
+11
+Se han definido riesgos aceptables y no aceptables.
+12
+Se han definido opciones de tratamiento para los riesgos no aceptables.
+13
+Los controles de seguridad han sido seleccionados en función del riesgo identificado.
+14
+El riesgo residual ha sido evaluado luego de aplicar los controles.
+15
+El sistema permite realizar el monitoreo periódico de los riesgos identificados.
+16
+El proceso de gestión automatizada de riesgos es revisado y actualizado periódicamente.
+17
+El sistema informático facilita el seguimiento de los tratamientos aplicados a los riesgos identificados
+18
+El sistema genera información que facilita el seguimiento y control de los riesgos de seguridad de la información
+ Fuente: Elaboración propia
+Lista de verificación institucional para la variable: Continuidad operativa
+Leyenda
+Valor
+Significado
+1
+Bajo
+2
+Medio
+3
+Alto
+Ítem
+Enunciado
+1
+2
+3
+1
+Los sistemas de información críticos se encuentran disponibles cuando son requeridos.
+2
+La información institucional es accesible para los usuarios autorizados.
+3
+Los incidentes de seguridad que afectan la operación institucional son detectados oportunamente.
+4
+Existen procedimientos definidos para la atención de incidentes que afectan los sistemas de información.
+5
+Los sistemas críticos pueden ser recuperados dentro de tiempos aceptables ante incidentes operativos.
+6
+La información puede ser restaurada mediante respaldos confiables.
+7
+La infraestructura cuenta con mecanismos de redundancia.
+8
+La infraestructura tecnológica cuenta con medidas de protección frente a fallas y accesos no autorizados.
+9
+El instituto cuenta con planes de continuidad operativa documentados.
+10
+El personal conoce los procedimientos y responsabilidades ante incidentes que afecten la continuidad operativa.
+11
+El instituto cuenta con mecanismos que permiten dar seguimiento continuo a eventos que puedan afectar la continuidad operativa
+Fuente: Elaboración propia
+Anexo 3: Autorizaciones para el desarrollo del proyecto del trabajo de investigación
+Anexo 4. Reporte de similitud en software Turnitin
